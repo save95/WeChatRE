@@ -1,0 +1,62 @@
+package unk.com.tencent.mm.protocal.a;
+
+public final class ng extends com.tencent.mm.ae.a
+{
+  private String bJG;
+  private boolean bJH;
+  private String bXA;
+  private boolean bXB;
+
+  public final void a(a.a.a.c.a parama)
+  {
+    if (this.bJH)
+      parama.p(1, this.bJG);
+    if (this.bXB)
+      parama.p(2, this.bXA);
+  }
+
+  public final int cE()
+  {
+    boolean bool = this.bJH;
+    int i = 0;
+    if (bool)
+      i = 0 + a.a.a.b.b.a.o(1, this.bJG);
+    if (this.bXB)
+      i += a.a.a.b.b.a.o(2, this.bXA);
+    return i + 0;
+  }
+
+  public final ng rx(String paramString)
+  {
+    this.bJG = paramString;
+    this.bJH = true;
+    return this;
+  }
+
+  public final ng ry(String paramString)
+  {
+    this.bXA = paramString;
+    this.bXB = true;
+    return this;
+  }
+
+  public final byte[] toByteArray()
+  {
+    return super.toByteArray();
+  }
+
+  public final String toString()
+  {
+    String str = "" + getClass().getName() + "(";
+    if (this.bJH)
+      str = str + "Value = " + this.bJG + "   ";
+    if (this.bXB)
+      str = str + "VerifyUserTicket = " + this.bXA + "   ";
+    return str + ")";
+  }
+}
+
+/* Location:           /home/danghvu/0day/WeChat/WeChat_4.5_dex2jar.jar
+ * Qualified Name:     com.tencent.mm.protocal.a.ng
+ * JD-Core Version:    0.6.2
+ */

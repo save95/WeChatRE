@@ -1,0 +1,38 @@
+package unk.com.tencent.mm.ui.chatting;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+final class s extends cq
+{
+  protected ProgressBar aEo;
+  protected TextView cvA;
+  protected ImageView cvB;
+  protected TextView cvv;
+  protected TextView cvx;
+  protected TextView cvz;
+
+  public s(int paramInt)
+  {
+    super(paramInt);
+  }
+
+  public final s n(View paramView)
+  {
+    super.s(paramView);
+    this.cvA = ((TextView)paramView.findViewById(2131493150));
+    this.aEo = ((ProgressBar)paramView.findViewById(2131493198));
+    this.cvB = ((ImageView)paramView.findViewById(2131493195));
+    this.cvx = ((TextView)paramView.findViewById(2131493159));
+    this.cvz = ((TextView)paramView.findViewById(2131493143));
+    this.cvv = ((TextView)paramView.findViewById(2131493149));
+    return this;
+  }
+}
+
+/* Location:           /home/danghvu/0day/WeChat/WeChat_4.5_dex2jar.jar
+ * Qualified Name:     com.tencent.mm.ui.chatting.s
+ * JD-Core Version:    0.6.2
+ */
