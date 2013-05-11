@@ -1,0 +1,22 @@
+package com.tencent.mm.plugin.qqsync.ui;
+
+import android.view.View;
+import android.view.View.OnClickListener;
+
+final class s
+  implements View.OnClickListener
+{
+  s(QQSyncUI paramQQSyncUI)
+  {
+  }
+
+  public final void onClick(View paramView)
+  {
+    QQSyncUI.f(this.aGm);
+  }
+}
+
+/* Location:           /home/danghvu/0day/WeChat/WeChat_4.5_dex2jar.jar
+ * Qualified Name:     com.tencent.mm.plugin.qqsync.ui.s
+ * JD-Core Version:    0.6.2
+ */
