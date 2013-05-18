@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.player.MusicBannerView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mbvview" android:background="@drawable/net_tip_detail_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mbv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:src="@drawable/music_player_icon" />
+            <com.tencent.mm.ui.player.ScrollAlwaysTextView android:ellipsize="marquee" android:id="@id/mbvtxtView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/webwxOnlineTip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mbvforward_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_webwechat_go" />
+        </LinearLayout>
+    </com.tencent.mm.ui.player.MusicBannerView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/voice_rcd_hint_bg" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="186.0dip" android:layout_height="wrap_content" android:minHeight="186.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/mm_tick" />
+        <TextView android:textSize="@dimen/TitleTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+    </LinearLayout>
+</LinearLayout>

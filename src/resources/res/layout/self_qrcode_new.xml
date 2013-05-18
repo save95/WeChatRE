@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ff393939" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_vertical" android:padding="26.0dip" android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_horizontal" android:background="@drawable/my_qrcard_bg" android:padding="15.0dip" style="@style/MMBody">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_area" android:background="@drawable/my_qrcard_name_btn" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/header_icon" android:layout_width="73.0dip" android:layout_height="73.0dip" android:src="@drawable/my_qrcard_photo" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="73.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="3.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@*android:color/black" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <ImageView android:id="@id/sex_image_view" android:paddingLeft="5.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dip" android:textColor="#ff737373" android:gravity="center_vertical" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff737373" android:gravity="center_vertical" android:id="@id/district" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/self_qrcode_iv" android:background="@drawable/my_qrcard_qrcode" android:padding="5.0dip" android:layout_width="224.0dip" android:layout_height="224.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff737373" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/self_qrcode_show" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

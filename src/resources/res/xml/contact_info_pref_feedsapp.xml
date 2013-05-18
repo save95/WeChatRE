@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.HelperHeaderPreference android:layout="@layout/contact_info_header_helper" android:key="contact_info_header_helper" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_feedsapp_view" android:key="contact_info_plugin_view" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_feedsapp_outside" android:key="contact_info_plugin_outsize" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_feedsapp_black" android:key="contact_info_plugin_black" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/install_btn" android:title="@string/settings_plugins_install" android:key="contact_info_plugin_install" />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/settings_plugins_uninstall" android:key="contact_info_plugin_uninstall" />
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/reader_app_font_chooser" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/reader_news_fontbackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/relativeLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:id="@id/read_app_font4tone_btn" android:background="@drawable/reader_news_fontone_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <RadioButton android:id="@id/read_app_font2_btn" android:background="@drawable/reader_news_fonttwo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <RadioButton android:id="@id/read_app_font3_btn" android:background="@drawable/reader_news_fontthree_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <RadioButton android:id="@id/read_app_font4_btn" android:background="@drawable/reader_news_fontfour_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+        </LinearLayout>
+        <ImageButton android:id="@id/read_app_font_cancel" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/reader_news_fontcancel_btn" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

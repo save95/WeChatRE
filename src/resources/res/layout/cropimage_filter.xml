@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cropimage_filter_select" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.CropImage android:gravity="center" android:layout_gravity="center" android:id="@id/cropimage_filter_show_iv" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cropimage_filter_operator" android:background="@drawable/camera_filter_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/exit_filter_btn" style="@style/ExitFilterButton" />
+        <View android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/MMSplit" />
+        <Button android:id="@id/confirm_filter_btn" style="@style/ConfirmFilterButton" />
+        <View android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/MMSplit" />
+        <Button android:id="@id/show_filter_list_btn" style="@style/ShowFilterListButton" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cropimage_filter_operator">
+        <View android:id="@id/cropimage_frame" android:visibility="invisible" android:layout_width="312.0dip" android:layout_height="312.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cropimage_iv" android:background="@drawable/mm_capture" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_above="@id/cropimage_filter_operator" />
+    <com.tencent.mm.ui.tools.MMHorList android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/cropimage_filter_gallery" android:background="@drawable/camera_filter_review_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="0.0dip" android:layout_above="@id/cropimage_filter_operator" />
+</RelativeLayout>

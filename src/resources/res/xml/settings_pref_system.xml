@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_notification" android:key="settings_notification_preference" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:title="@string/settings_landscape_mode" android:key="settings_landscape_mode" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/settings_voicerecorder_mode" android:key="settings_voicerecorder_mode" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_voice_play_mode" android:key="settings_voice_play_mode" android:defaultValue="false" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_language" android:key="settings_language" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_text_size" android:key="settings_text_size" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_bakchat_ui" android:key="settings_bak_chat" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

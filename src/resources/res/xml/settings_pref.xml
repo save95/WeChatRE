@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.setting.PersonalPreference android:layout="@layout/mm_preference" android:title="@string/settings_personal_info" android:key="settings_account" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_qrcode_card" android:key="settings_qrcode" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_tweibo" android:key="settings_tweibo" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_my_album" android:key="settings_my_album" android:widgetLayout="@layout/mm_preference_widget_empty" />
+    <com.tencent.mm.ui.base.preference.IconSummaryPreference android:title="@string/settings_room_right" android:key="settings_room_right" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_account_info" android:key="settings_account_info" android:widgetLayout="@layout/mm_preference_screen" />
+    <com.tencent.mm.ui.base.preference.SwitchKeyValuePreference android:layout="@layout/mm_preference" android:title="@string/settings_bind_mobile_title" android:key="settings_bind_mobile" android:widgetLayout="@layout/mm_preference_submenu" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_skin" android:key="settings_skin" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_chatting_bg" android:key="settings_chatting_bg" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_about_system" android:key="settings_about_system" android:widgetLayout="@layout/mm_preference_screen" />
+    <IconPreference android:title="@string/settings_plugins" android:key="settings_plugins" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_about_privacy" android:key="settings_about_privacy" android:widgetLayout="@layout/mm_preference_screen" />
+    <IconPreference android:title="@string/settings_system_notice" android:key="settings_system_notice" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_push_software" android:key="settings_push_software" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_traffic_statistic" android:key="settings_traffic_statistic" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_like_facebook" android:key="settings_like_facebook" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_follow_twitter" android:key="settings_follow_twitter" android:widgetLayout="@layout/mm_preference_screen" />
+    <IconPreference android:title="@string/settings_about_micromsg" android:key="settings_about_micromsg" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_reset" android:key="settings_reset" android:widgetLayout="@layout/mm_preference_widget_empty" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/settings_logout" android:key="settings_logout" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

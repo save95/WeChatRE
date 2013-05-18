@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/mm_listitem" android:paddingLeft="8.0dip" android:layout_height="56.0dip" style="@style/MMListItem">
+        <ImageView android:id="@id/group_card_item_avatar_iv" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <TextView android:id="@id/group_card_item_nick" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" style="@style/MMFontTitleInList" />
+        <TextView android:textColor="@color/mm_list_textcolor_two" android:gravity="left|center" android:id="@id/group_card_item_count_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/MMFontTimeInList" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mm_submenu" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="5.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/fmessage_item_view_content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="false" android:layout_weight="1.0" style="@style/MMFontPreferenceSmall" />
+    <Button android:textSize="@dimen/SmallestTextSize" android:textColor="@color/lightgrey" android:gravity="center" android:id="@id/fmessage_item_view_reply_btn" android:background="@drawable/fmessage_item_view_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/app_reply" />
+</LinearLayout>

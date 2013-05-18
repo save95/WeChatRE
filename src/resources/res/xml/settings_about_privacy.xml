@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_about_add_friend" android:key="add_friend" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_private_blacklist" android:key="settings_about_blacklist" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_pirvate_timeline" android:key="settings_about_timeline" android:widgetLayout="@layout/mm_preference_screen" />
+</PreferenceScreen>

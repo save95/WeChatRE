@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/shake_tran_img_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/shake_tran_img_unbind_ll" android:background="@null" style="@style/NavPage">
+        <TextView android:textSize="@dimen/Small_TextSize" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/shake_tran_img_intro_text" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/shake_tran_img_intro_text" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:drawableTop="@drawable/shakepic_connecticon" android:drawablePadding="60.0dip" />
+        <Button android:id="@id/shake_tran_img_unbind_btn" android:background="@drawable/btn_style_zero" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="@string/shake_tran_img_unbind_btn" style="@style/MMLineActionButton" />
+    </LinearLayout>
+</ScrollView>

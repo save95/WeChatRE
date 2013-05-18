@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/mmfooter_bg_white" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:id="@id/chatting_footer_switch2input" android:background="@drawable/chatting_footer_switcher_selector" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <HorizontalScrollView android:id="@id/chatting_footer_menu_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatting_footer_switch2input" android:layout_alignTop="@id/chatting_footer_switch2input" android:layout_alignBottom="@id/chatting_footer_switch2input">
+        <LinearLayout android:orientation="horizontal" android:id="@id/chatting_footer_menu_line" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:id="@id/chatting_footer_menu_header" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+            <TextView android:id="@id/chatting_footer_menu_btn1" style="@style/MMFooterMenuButtion" />
+            <TextView android:id="@id/chatting_footer_menu_btn2" style="@style/MMFooterMenuButtion" />
+            <TextView android:id="@id/chatting_footer_menu_btn3" style="@style/MMFooterMenuButtion" />
+            <TextView android:id="@id/chatting_footer_menu_btn4" style="@style/MMFooterMenuButtion" />
+            <TextView android:id="@id/chatting_footer_menu_btn5" style="@style/MMFooterMenuButtion" />
+            <TextView android:id="@id/chatting_footer_menu_btn6" style="@style/MMFooterMenuButtion" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:id="@id/chatting_footer_menu_separator" android:background="@drawable/mmfooter_listtotext_line1" android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatting_footer_switch2input" android:layout_alignTop="@id/chatting_footer_switch2input" android:layout_alignBottom="@id/chatting_footer_switch2input" />
+    <View android:id="@id/chatting_footer_menu_indicator" android:background="@drawable/mmfooter_listtotext_tablarrow" android:visibility="gone" android:clickable="false" android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

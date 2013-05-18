@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" android:text="{time}" style="@style/ChattingUISplit" />
+    <RelativeLayout android:paddingRight="20.0dip" style="@style/ChattingAppUIContent">
+        <ImageView android:id="@id/chatting_avatar_iv" android:focusable="false" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/ChattingUIAvatarFrom" />
+        <TextView android:id="@id/chatting_user_tv" android:visibility="gone" android:layout_toRightOf="@id/chatting_avatar_iv" style="@style/ChattingUISenderText" />
+        <LinearLayout android:id="@id/chatting_click_area" android:background="@drawable/chatfrom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatting_avatar_iv" android:layout_below="@id/chatting_user_tv">
+            <ImageView android:id="@id/chatting_appmsg_thumb_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_logo" android:adjustViewBounds="true" android:maxWidth="240.0dip" />
+        </LinearLayout>
+        <TextView android:id="@id/chatting_appmsg_source_tv" android:background="@drawable/app_msg_item_source_from" android:layout_marginRight="5.0dip" android:text="{source}" android:layout_below="@id/chatting_click_area" android:layout_alignLeft="@id/chatting_click_area" style="@style/ChattingItemSourceTextView" />
+        <TextView android:id="@id/chatting_appmsg_comment_tv" android:background="@drawable/app_msg_item_source_from" android:layout_marginRight="10.0dip" android:text="@string/chatting_comment" android:layout_below="@id/chatting_click_area" android:layout_alignRight="@id/chatting_click_area" style="@style/ChattingItemSourceTextView" />
+    </RelativeLayout>
+</LinearLayout>

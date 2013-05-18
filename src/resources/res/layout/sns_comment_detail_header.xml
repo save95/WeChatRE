@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.MaskImageButton android:id="@id/album_avatar_iv" style="@style/SnsAvatarFrom" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/sns_meida_frame" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/sns_word_color" android:id="@id/type_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/desc_tv" android:background="@drawable/sns_clickable_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/sns_link_color" android:id="@id/desc_op_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/images_keeper_li" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <include layout="@layout/sns_timeline_imagesline" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:id="@id/with_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="3.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:id="@id/album_publish_time" android:layout_width="wrap_content" android:layout_height="20.0dip" />
+                <ImageView android:layout_gravity="top" android:id="@id/album_groupid" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/group_id_btn" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:id="@id/album_address" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/sns_link_color" android:id="@id/album_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="100.0dip" android:singleLine="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/sns_link_color" android:id="@id/album_del" android:background="@drawable/sns_clickable_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/app_delete" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-17.0dip" android:layout_alignBottom="@id/sns_meida_frame">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/album_comment_container" android:background="@drawable/friendactivity_comment_frame_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/album_like_img" android:background="@drawable/friendactivity_comment_frame" android:layout_width="88.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/album_like_icon" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textColor="@color/white" android:id="@id/album_like_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_like" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/album_comment_li" android:background="@drawable/friendactivity_comment_frame" android:layout_width="88.0dip" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/album_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_comment_writeicon" />
+                        <TextView android:textColor="@color/white" android:id="@id/album_comment_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_comment" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="bottom" android:id="@id/album_show_comment_tv" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingBottom="17.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/friendactivity_comment_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

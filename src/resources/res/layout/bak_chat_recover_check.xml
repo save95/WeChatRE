@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bak_chat_exist" android:padding="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" style="@style/MMBody">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="14.599976dip" android:textColor="#ff757575" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bak_chat_recently" android:shadowColor="#ffffffff" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:lineSpacingExtra="@dimen/bak_chat_intro_text_spacing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/bak_chat_recover_check_result_btn" android:background="@drawable/preference_one_item" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="0.0dip" android:minHeight="66.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.599976dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/bak_chat_recover_from_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textSize="12.0dip" android:textColor="#ffa5a5a5" android:gravity="center_vertical" android:id="@id/bak_chat_recover_from_who" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/bak_chat_intro_text_spacing" />
+            </LinearLayout>
+            <TextView android:textSize="14.599976dip" android:textColor="#ff576b95" android:gravity="center_vertical" android:id="@id/bak_chat_recover_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bak_chat_forward_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/bakchat_forward" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bak_chat_outdate_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/net_warn_icon" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip">
+            <TextView android:layout_marginTop="12.0dip" android:text="@string/bak_chat_recover_info" style="@style/qq_sync_intro_text" />
+        </LinearLayout>
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/bak_chat_recover_delete_btn" android:background="@drawable/btn_style_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="10.0dip" android:text="@string/bak_chat_recover_delete" android:shadowColor="@color/black" android:shadowDx="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/no_bak_chat" android:padding="0.0dip" android:visibility="gone" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" style="@style/MMBody">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="14.599976dip" android:textColor="#ff757575" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bak_chat_recently" android:shadowColor="#ffffffff" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:lineSpacingExtra="@dimen/bak_chat_intro_text_spacing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:background="@drawable/preference_one_item" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="0.0dip" android:minHeight="66.0dip">
+            <TextView android:textSize="14.599976dip" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bak_chat_no_backup" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip">
+            <TextView android:layout_marginTop="12.0dip" android:text="@string/bak_chat_recover_info" style="@style/qq_sync_intro_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/bak_chat_recover_net_warning" android:padding="0.0dip" android:visibility="gone" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" style="@style/MMBody" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/bak_chat_recover_net_loading" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" style="@style/MMBody">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="14.599976dip" android:textColor="#ff757575" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bak_chat_recently" android:shadowColor="#ffffffff" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:lineSpacingExtra="@dimen/bak_chat_intro_text_spacing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/preference_one_item" android:paddingLeft="14.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="0.0dip" android:minHeight="66.0dip">
+            <TextView android:textSize="14.599976dip" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/bak_chat_recover_loading" android:layout_weight="1.0" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/check_recover_loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:indeterminateDrawable="@anim/check_list_loading" style="?android:attr/progressBarStyleSmall" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip">
+            <TextView android:layout_marginTop="12.0dip" android:text="@string/bak_chat_recover_info" style="@style/qq_sync_intro_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

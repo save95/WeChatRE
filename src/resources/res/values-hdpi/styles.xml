@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChattingUIMsgTypeChooser">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/msg_type_selector_bg</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="RoomInfoItemAvatar">
+        <item name="android:background">@drawable/default_avatar</item>
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="plugin_qqmail_compose_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mm_listitem_normal</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">45.0dip</item>
+    </style>
+    <style name="plugin_qqmail_compose_item_title_style">
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+        <item name="android:textColor">@color/plugin_mail_grey</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">7.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="plugin_qqmail_add_addr_style" parent="@style/plug_qqmail_compose_add_style">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="plugin_qqmail_subject_delete_style" parent="@style/plug_qqmail_compose_add_style">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+</resources>

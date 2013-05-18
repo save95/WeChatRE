@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sns_outside_permiss" android:key="sns_outside_permiss" android:defaultValue="false" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/sns_outside_permiss_tip" android:key="sns_outside_permiss_tip" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sns_black_permiss" android:key="sns_black_permiss" android:defaultValue="false" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/sns_black_permiss_tip" android:key="sns_black_permiss_tip" />
+</PreferenceScreen>

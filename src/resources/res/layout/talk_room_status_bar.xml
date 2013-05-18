@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/talk_room_status_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/talk_room_status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ic_person" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/talk_room_persons_ic" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_person_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/ic_person" android:layout_centerVertical="true" style="@style/with_dark_shadow_top" />
+    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/tv_status_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/with_dark_shadow_top" />
+</RelativeLayout>

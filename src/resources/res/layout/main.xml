@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_ui_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/NavPage">
+        <RelativeLayout android:background="#ffced2d7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/main_chatting_lv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" android:layout_alignParentTop="true" />
+            <TextView android:id="@id/empty_conversation_tv" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_empty_conversation" style="@style/MMFontEmptyMsgLarge" />
+            <TextView android:id="@id/empty_search_conversation_tv" android:paddingTop="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="49.0dip" android:text="@string/main_search_empty_conversation" style="@style/MMFontEmptyMsgLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

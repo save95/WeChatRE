@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/sns_shoot_emotion_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/MMFooter">
+        <ImageButton android:id="@id/album_comment_mode_iv" android:background="@null" android:paddingTop="3.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/chatting_setmode_biaoqing_btn" android:minWidth="0.0dip" style="@style/MMButton" />
+    </LinearLayout>
+    <com.tencent.mm.ui.chatting.SmileyPanel android:id="@id/album_comment_smiley_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

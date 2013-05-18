@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mm_listitem_conv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/LargeTextSize" android:textColor="@color/mm_pref_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18.0dip" android:text="@string/sns_get_old_msg" />
+</LinearLayout>

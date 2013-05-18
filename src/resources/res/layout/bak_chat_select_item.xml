@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/bak_chat_catalog" android:paddingLeft="10.0dip" android:layout_height="wrap_content" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" style="@style/MMListCatalog" />
+    <LinearLayout android:id="@id/bak_chat_select_item_click_area" android:background="@drawable/mm_listitem_conv" android:layout_height="56.0dip" style="@style/MMListItem">"
+<ImageView android:id="@id/bak_chat_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+            <TextView android:id="@id/bak_chat_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{nick}" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/MMFontTitleInList" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.299988dip" android:textColor="#ffa5a5a5" android:layout_gravity="center_vertical" android:id="@id/bak_chat_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bak_chat_upload_calculate" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/bak_chat_select_cb" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="17.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

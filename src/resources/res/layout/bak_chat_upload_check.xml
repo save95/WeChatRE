@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bak_chat_upload_calculating" android:padding="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" style="@style/MMBody">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:indeterminateDrawable="@anim/loading" style="?android:attr/progressBarStyle" />
+        <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/bak_chat_upload_calculating" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/bak_chat_upload_warning" android:padding="0.0dip" android:visibility="gone" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" style="@style/MMBody" />
+</LinearLayout>

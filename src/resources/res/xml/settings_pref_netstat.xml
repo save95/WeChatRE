@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:mm="http://schemas.android.com/apk/res/com.tencent.mm">
+    <Preference mm:layout="@layout/mm_preference_info" mm:key="settings_netstat_info" />
+    <Preference mm:layout="@layout/mm_preference" mm:title="@string/settings_netstat_mobile" mm:key="settings_netstat_mobile" />
+    <com.tencent.mm.ui.setting.NetStatPreference mm:layout="@layout/mm_preference" mm:key="settings_netstat_mobile_detail" mm:src="mobile" />
+    <PreferenceCategory />
+    <Preference mm:layout="@layout/mm_preference" mm:title="@string/settings_netstat_wifi" mm:key="settings_netstat_wifi" />
+    <com.tencent.mm.ui.setting.NetStatPreference mm:layout="@layout/mm_preference" mm:key="settings_netstat_wifi_detail" mm:src="total" />
+    <Preference mm:layout="@layout/mm_preference_info" mm:title="@string/settings_traffic_all_statistic_info" mm:key="settings_netstat_tip" />
+</PreferenceScreen>

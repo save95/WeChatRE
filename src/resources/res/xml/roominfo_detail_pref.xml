@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <com.tencent.mm.ui.setting.SignaturePreference android:layout="@layout/mm_preference" android:title="@string/room_my_displayname" android:key="room_name" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/room_save_to_contact" android:key="room_save_to_contact" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/room_msg_show_username" android:key="room_msg_show_username" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/room_msg_close_notify" android:key="room_msg_notify" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/room_placed_to_the_top" android:key="room_placed_to_the_top" android:widgetLayout="@layout/mm_preference_checkbox" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/room_set_chatting_background" android:key="room_set_chatting_background" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/room_clear_chatting_history" android:key="room_clear_chatting_history" android:widgetLayout="@layout/mm_preference_screen" />
+</PreferenceScreen>

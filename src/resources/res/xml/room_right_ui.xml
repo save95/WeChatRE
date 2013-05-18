@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_room_right_num_limit" android:key="settings_room_size" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/room_right_max_tip" android:key="room_right_max_tip" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.setting.RoomGrantPreference android:layout="@layout/mm_preference" android:title="@string/settings_room_grant" android:key="settings_room_grant" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/grant_btn" android:title="@string/room_right_grant_btn" android:key="room_grant_to_friend" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/room_right_grant_tip" android:key="room_right_grant_tip" />
+</PreferenceScreen>

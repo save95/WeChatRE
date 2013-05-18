@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:padding="20.0dip" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/plugin_icon" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/plugin_title" android:layout_toRightOf="@id/plugin_icon" style="@style/MMTitle" />
+    <TextView android:id="@id/plugin_api_key" android:layout_above="@id/plugin_title" style="@style/MMTitle" />
+    <TextView android:textSize="@dimen/TitleTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="plugin need your authority" style="@style/MMBriefText" />
+    <ListView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <Button android:id="@id/allow" android:text="Allow" style="@style/MMLineActionButton" />
+    <Button android:id="@id/deny" android:background="@drawable/btn_style_two" android:text="Not Allow" style="@style/MMLineActionButton" />
+</LinearLayout>

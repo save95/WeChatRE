@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/nav_bg" android:background="@drawable/talk_room_banner_bg_off" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nav_layout" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/talk_room_mic_in_chat" android:scaleType="fitXY" android:contentDescription="@null" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_nav_content" android:layout_width="0.0dip" android:layout_height="40.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/talk_room_nav_ic_arrow" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="132.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/talk_room_mic_in_chat" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tv_dialog_content" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/dialog_btn_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_cancel" android:background="@drawable/talk_room_banner_btn_cancel" android:layout_width="143.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/app_cancel" android:layout_weight="1.0" />
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_confirm" android:background="@drawable/talk_room_banner_btn_ok" android:layout_width="143.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/talk_room_enter_room" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

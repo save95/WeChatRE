@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.base.preference.EditPreference android:layout="@layout/edit_share_card" android:key="share_to_edit" />
+    <Preference android:layout="@layout/edit_share_btn" android:title="@string/share_btn" android:key="share_to" />
+</PreferenceScreen>

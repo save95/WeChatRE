@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/mm_listitem_conv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/sns_msg_avatar_iv" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="11.0dip" style="@style/ChattingUIAvatarFrom" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textColor="@color/sns_link_color" android:layout_gravity="center_vertical" android:id="@id/sns_msg_nick_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/sns_msg_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:layout_gravity="center_vertical" android:id="@id/sns_msg_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="top" android:id="@id/sns_msg_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="13.0dip" android:scaleType="centerCrop" android:maxHeight="60.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:gravity="center" android:layout_gravity="top" android:id="@id/sns_msg_tv" android:background="@color/sns_loading_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="13.0dip" android:maxHeight="60.0dip" android:text="" android:maxLines="4" />
+</LinearLayout>

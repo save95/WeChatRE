@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/dark_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/download_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/download_progress_area" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.base.MMProgressBar android:id="@id/download_pb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/download_stop_btn" android:background="@drawable/download_cancel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" />
+            <ImageView android:id="@id/download_restart_btn" android:background="@drawable/download_cancel_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/attach_download_speed_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="18.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/attach_preview_btn" android:background="@drawable/btn_style_one" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="220.0dip" android:text="@string/mail_attach_preview" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+        <Button android:textSize="18.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/attach_download_btn" android:background="@drawable/btn_style_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="220.0dip" android:text="@string/mail_attach_download" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="120.0dip">
+        <TextView android:textSize="@dimen/SmallTextSize" android:textColor="#ff777777" android:gravity="center_horizontal" android:id="@id/attach_download_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mail_attach_download_status" />
+        <TextView android:textSize="@dimen/SmallTextSize" android:textColor="#ff4b8ee1" android:id="@id/attach_try_open_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

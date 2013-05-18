@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/password_et" android:layout_marginTop="20.0dip" android:hint="@string/bak_chat_enter_pwd" style="@style/MMLineEditPass" />
+    <EditText android:id="@id/password_ag_et" android:layout_marginTop="20.0dip" android:hint="@string/bak_chat_enter_pwd_ag" style="@style/MMLineEditPass" />
+    <Button android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/upload_btn" android:background="@drawable/btn_style_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/bak_chat_upload_btn" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+</LinearLayout>

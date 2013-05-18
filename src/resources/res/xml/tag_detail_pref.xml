@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/sns_tag_name" android:key="settings_tag_name" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.ContactListPreference android:layout="@layout/roominfo_preference" android:title="@string/app_name" android:key="roominfo_contact" />
+    <PreferenceCategory />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/set_tag_del_tip" android:key="delete_tag_name" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

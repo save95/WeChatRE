@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/out_call" android:background="@drawable/voip_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerBarRoot" android:background="@drawable/voip_videoconnectbar" android:layout_width="fill_parent" android:layout_height="79.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/voipcall_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/voip_" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/voipcall_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/voip_tip_color" android:gravity="center" android:id="@id/voipcall_hint" android:background="@color/voip_tip_bg_color" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/voip_bar" />
+    <LinearLayout android:id="@id/voip_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/voip_outcall_bar" android:background="@drawable/voip_videoconnectbottombar" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/voip_invite_cancel_btn" android:background="@drawable/btn_style_zero" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voipvoice_hangup" />
+                    <TextView android:textSize="@dimen/LargerTextSize" android:textColor="@color/white" android:gravity="center_vertical" android:paddingLeft="1.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voip_hungup" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/voip_incall_bar" android:background="@drawable/voip_videoconnectbottombar2" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/invite_accept_video" android:background="@drawable/btn_style_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_videoconnectwhite" />
+                    <TextView android:textSize="@dimen/LargerTextSize" android:textColor="@color/white" android:gravity="center_vertical" android:paddingLeft="1.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voip_accept_call" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/voip_invite_reject_btn" android:background="@drawable/btn_style_zero" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_hangupwhite" />
+                    <TextView android:textSize="@dimen/LargerTextSize" android:textColor="@color/white" android:gravity="center_vertical" android:paddingLeft="1.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voip_ignore_btn" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

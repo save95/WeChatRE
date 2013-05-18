@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.openapi.AppHeaderPreference android:layout="@layout/app_profile_header" android:key="app_profile_header" />
+    <Preference android:layout="@layout/install_btn" android:title="@string/app_profile_add" android:key="app_profile_add" />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/app_profile_remove" android:key="app_profile_remove" />
+    <PreferenceCategory android:key="app_profile_cat" />
+</PreferenceScreen>

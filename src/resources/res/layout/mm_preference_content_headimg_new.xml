@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/mm_preference_ll_id" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginRight="-4.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left|center" android:layout_width="73.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:gravity="left" android:id="@id/image_headimg" android:background="@drawable/mini_avatar_shadow" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <TextView android:textColor="@*android:color/white" android:gravity="center" android:id="@id/no_header_icon_tip" android:background="@drawable/self_qrcode_header_no_icon_tips" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/app_edit" />
+        <View android:id="@id/mask_header_icon" android:background="@drawable/self_qrcode_header_icon_click" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@*android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+    </LinearLayout>
+</RelativeLayout>

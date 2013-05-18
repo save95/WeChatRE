@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@color/black" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/mm_title" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

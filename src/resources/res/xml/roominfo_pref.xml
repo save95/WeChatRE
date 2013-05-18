@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceCategory />
+    <com.tencent.mm.ui.ContactListPreference android:layout="@layout/roominfo_preference" android:title="@string/app_name" android:key="roominfo_contact" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.setting.SignaturePreference android:layout="@layout/mm_preference" android:title="@string/room_name" android:key="room_name" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/room_qr_code" android:key="room_qr_code" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/room_placed_to_the_top" android:key="room_placed_to_the_top" android:widgetLayout="@layout/mm_preference_checkbox" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/room_detail_settings" android:key="room_detail_settings" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/room_del_quit" android:key="room_del_quit" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <PreferenceCategory />
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/settings_need_verify" android:key="settings_need_verify" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/settings_auto_add_reply_friends" android:key="settings_add_friend_by_reply" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/settings_auto_add_reply_friends_tip" android:key="settings_add_friend_by_reply_tip" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/settings_find_me_by_QQ" android:key="settings_find_me_by_QQ" />
+    <CheckBoxPreference android:title="@string/contact_info_recommend_qqfriends_to_me" android:key="settings_recommend_qqfriends_to_me" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/settings_qq_recommend_tip" android:key="settings_qq_recommend_tip" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/settings_find_me_by_mobile" android:key="settings_find_me_by_mobile" />
+    <CheckBoxPreference android:title="@string/contact_info_recommend_mobilefriends_to_me" android:key="settings_recommend_mobilefriends_to_me" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/settings_mobile_recommend_tip" android:key="settings_mobile_recommend_tip" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:title="@string/settings_find_me_by_weixin" android:key="settings_find_me_by_weixin" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/settings_find_me_tip" android:key="settings_find_me_tip" />
+    <PreferenceCategory />
+</PreferenceScreen>

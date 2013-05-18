@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mm_preference_contact_biz_ly" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@*android:id/title" android:layout_width="73.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/contact_biz_logo_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/mm_pref_summary" android:gravity="right|center" android:id="@id/contact_biz_logo_noshow" android:paddingLeft="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_my_favorite_biz_noshow" />
+</LinearLayout>

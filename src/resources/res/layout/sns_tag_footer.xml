@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@null" android:paddingLeft="7.0dip" android:paddingTop="20.0dip" android:paddingRight="7.0dip" android:paddingBottom="20.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">"
+<TextView android:textSize="16.0dip" android:textColor="@color/sns_link_color" android:id="@id/edit_my_tag_tv" android:background="@drawable/sns_clickable_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_tag_edit_my_tag" />
+    <View android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/sns_link_color" android:id="@id/edit_avoid_range_tv" android:background="@drawable/sns_clickable_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_tag_edit_avoid_range" />
+</LinearLayout>

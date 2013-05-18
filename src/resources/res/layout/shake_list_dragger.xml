@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@id/shake_report_container_al" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/shake_report_dragger_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.plugin.shake.ui.DraggerButton android:layout_gravity="bottom|center" android:id="@id/shake_report_dragger_btn" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/shake_report_content_ll" android:background="@color/general_sub_background_color" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/shake_report_no_shake_friends_tv" android:background="#ffced2d7" android:visibility="gone" android:text="@string/shake_friends_history_empty" style="@style/ShakeTipsTextStyle" />
+            </LinearLayout>
+            <TextView android:background="@drawable/shake_report_dragger_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</AbsoluteLayout>

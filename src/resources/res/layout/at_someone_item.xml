@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.tencent.mm">
+    <TextView android:id="@id/catalog" android:paddingRight="4.0dip" android:visibility="gone" android:layout_height="wrap_content" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" style="@style/MMListCatalog" />
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/item" android:background="@drawable/mm_listitem" android:layout_width="fill_parent" android:layout_height="56.0dip" style="@style/MMListItem">
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/at_someone_item_avatar" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginLeft="8.0dip">
+            <ImageView android:id="@id/content" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <TextView android:gravity="left|center" android:id="@id/at_someone_item_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="{nick}" android:singleLine="true" style="@style/MMFontTitleInList" />
+        <TextView android:id="@id/arrows" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/mm_submenu" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

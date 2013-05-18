@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_dialog_container_ll" android:background="@color/semitransparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_weight="1.0" style="@style/ConfirmDialog">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:id="@id/confirm_dialog_title_tv" android:maxHeight="50.0dip" style="@style/ConfirmDialogTitle" />
+            </ScrollView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.tencent.mm.ui.CdnImageView android:id="@id/confirm_dialog_thumb_iv" style="@style/ConfirmDialogThumb" />
+                <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:id="@id/confirm_dialog_message_tv" android:maxHeight="96.0dip" style="@style/ConfirmDialogMessage" />
+                </ScrollView>
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0dip" android:ellipsize="end" android:id="@id/confirm_dialog_source_tv" android:maxHeight="28.0dip" style="@style/ConfirmDialogMessage" />
+            </ScrollView>
+            <EditText android:id="@id/confirm_dialog_text_et" style="@style/ConfirmDialogEditText" />
+        </LinearLayout>
+        <include layout="@layout/confirm_dialog_footer_btn" />
+    </LinearLayout>
+</LinearLayout>

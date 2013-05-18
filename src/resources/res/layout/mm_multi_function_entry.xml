@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mm_multi_function_entry" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout1" android:background="@drawable/mm_title_functionframe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:id="@id/multi_func_chatting_click_area" android:background="@drawable/mm_multi_function_button" android:text="@string/multi_function_entry_chatting" android:drawableLeft="@drawable/mm_title_btn_compose_normal" style="@style/MagicWand" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@drawable/mm_title_functionframe_line" android:scaleType="fitXY" />
+        <TextView android:id="@id/multi_func_listen_model_click_area" android:background="@drawable/mm_multi_function_button" android:text="@string/multi_function_entry_listen" android:drawableLeft="@drawable/mm_title_btn_receiver_normal" style="@style/MagicWand" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@drawable/mm_title_functionframe_line" android:scaleType="fitXY" />
+        <TextView android:id="@id/multi_func_web_weixin_click_area" android:background="@drawable/mm_multi_function_button" android:text="@string/multi_function_entry_keyboard" android:drawableLeft="@drawable/mm_title_btn_keyboard_normal" style="@style/MagicWand" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@drawable/mm_title_functionframe_line" android:scaleType="fitXY" />
+        <TextView android:id="@id/multi_func_qrcode_click_area" android:background="@drawable/mm_multi_function_button" android:text="@string/multi_function_entry_qrcode" android:drawableLeft="@drawable/mm_title_btn_qrcode_normal" style="@style/MagicWand" />
+    </LinearLayout>
+</RelativeLayout>

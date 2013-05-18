@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/chatrecord_key" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/bak_chat_crypt_tip" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bak_chat_set_crypt_tip" android:shadowColor="@color/bak_chat_crypt_tip_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    <Button android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/set_crypt_btn" android:background="@drawable/btn_style_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/bak_chat_set_crypt" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    <Button android:textSize="20.0dip" android:textColor="@color/black" android:id="@id/upload_btn" android:background="@drawable/btn_style_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bak_chat_upload_btn" android:shadowColor="@color/white" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+</LinearLayout>

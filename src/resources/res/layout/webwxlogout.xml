@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:src="@drawable/net_webwechat_bigicon" />
+    <TextView android:textSize="@dimen/XLargeTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/webwx_logout_desc" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+</LinearLayout>

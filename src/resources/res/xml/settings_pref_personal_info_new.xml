@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:mm="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.setting.HeadImgNewPreference mm:layout="@layout/mm_preference" mm:title="@string/settings_avatar" mm:key="settings_change_avatar" mm:widgetLayout="@layout/mm_preference_screen" />
+    <Preference mm:layout="@layout/mm_preference" mm:title="@string/settings_name" mm:key="settings_name" mm:widgetLayout="@layout/mm_preference_screen" />
+    <Preference mm:layout="@layout/mm_preference" mm:title="@string/settings_username" mm:key="settings_username" mm:widgetLayout="@layout/mm_preference_widget_empty" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.base.preference.DialogPreference mm:layout="@layout/mm_preference" mm:persistent="false" mm:title="@string/settings_sex" mm:key="settings_sex" mm:widgetLayout="@layout/mm_preference_screen" mm:entries="@array/sex" mm:entryValues="@array/sex_id" />
+    <Preference mm:layout="@layout/mm_preference" mm:title="@string/settings_district" mm:key="settings_district" mm:widgetLayout="@layout/mm_preference_screen" />
+    <com.tencent.mm.ui.setting.SignaturePreference mm:layout="@layout/mm_preference" mm:title="@string/settings_signature" mm:key="settings_signature" mm:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.setting.BizPreference mm:layout="@layout/mm_preference" mm:title="@string/contact_info_favor_brand" mm:key="settings_my_favorite_biz" mm:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

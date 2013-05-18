@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/VideoRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/calling_view_root" android:background="@drawable/voip_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/audiocall_view_root" android:background="@color/voip_voice_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/talker_avatar" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="120.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/talker_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="{tiger}" android:singleLine="true" android:layout_below="@id/talker_avatar" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/voip_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="00:00" android:layout_below="@id/talker_nickname" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_below="@id/voip_time_tv" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/speaker_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_speakerswitch_btn" />
+                <include android:id="@id/audio_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" layout="@layout/switch_button" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/earmode_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/voip_receiverwitch_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/voip_tip_color" android:gravity="center" android:id="@id/misc_hint_bar" android:background="@color/voip_tip_bg_color" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bar_layout_talking" />
+        <include layout="@layout/voip_audio_tool_bar" />
+    </RelativeLayout>
+    <include layout="@layout/voip_audio_outcall" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/dark_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/download_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffe9e9e9" android:id="@id/download_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_progress_area" android:paddingLeft="50.0dip" android:paddingTop="64.0dip" android:paddingRight="50.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.base.MMProgressBar android:id="@id/download_pb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/download_stop_btn" android:background="@drawable/download_cancel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" />
+    </LinearLayout>
+    <Button android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/download_continue_btn" android:background="@drawable/btn_style_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_continue" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+    <Button android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/download_open_btn" android:background="@drawable/btn_style_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_open" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+    <Button android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/download_start_btn" android:background="@drawable/btn_style_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_start" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_data_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/SmallTextSize" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_ing" />
+        <TextView android:textSize="@dimen/SmallTextSize" android:textColor="#ff777777" android:id="@id/download_data_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/SmallTextSize" android:textColor="#ff777777" android:id="@id/download_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/download_ing" />
+</LinearLayout>

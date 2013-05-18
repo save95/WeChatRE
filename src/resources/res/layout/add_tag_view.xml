@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mm_listitem_conv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_margin="3.0dip">
+        <ImageView android:id="@id/add_iv" android:background="@drawable/sns_shoot_newselect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tag_add" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/tag_add_friend" />
+    </LinearLayout>
+</LinearLayout>

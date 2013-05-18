@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/SmallerTextSize" android:layout_gravity="center_horizontal" android:id="@id/reader_app_item_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <com.tencent.mm.plugin.readerapp.ui.ReaderItemListView android:orientation="vertical" android:id="@id/reader_root_item_list" android:background="@drawable/chatfrom_bg_new_fmessage_normal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:listSelector="@null" android:divider="@drawable/chatfrom_bg_new_fmessage_line" android:dividerHeight="2.0px" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="13.0dip" />
+    <TableLayout android:orientation="vertical" android:id="@id/table_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableRow android:id="@id/table_row_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <TableRow android:id="@id/table_row_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <TableRow android:id="@id/table_row_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </TableLayout>
+</LinearLayout>

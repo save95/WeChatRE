@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/whats_new_title_tv" android:text="@string/whats_new_title_3" style="@style/whats_new_title_for_newuser" />
+    <Button android:textSize="@dimen/Big_TextSize" android:textColor="@color/mm_whats_new_btn_text" android:id="@id/whats_new_start_btn" android:background="@drawable/whats_new_btn" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="160.0dip" android:text="@string/whats_new_start" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

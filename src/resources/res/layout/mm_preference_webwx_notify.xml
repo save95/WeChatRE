@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/webwechat_news_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="18.0dip">
+        <LinearLayout android:gravity="left|center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0sp" android:minHeight="@dimen/PreferenceItemHeight" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ff9fa4a8" android:id="@*android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+            <TextView android:id="@*android:id/summary" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@*android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" />
+    </LinearLayout>
+</LinearLayout>

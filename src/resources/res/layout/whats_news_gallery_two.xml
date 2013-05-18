@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_bg_man" android:src="@drawable/whatisnew_pic_02" style="@style/whats_new_image_for_newuser" />
+    <TextView android:id="@id/intro" android:text="@string/whats_new_title_2" style="@style/whats_new_title_for_newuser" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/click_keeper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/big_img_fl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/mask_view" android:background="#c0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/progressbar" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
+</LinearLayout>

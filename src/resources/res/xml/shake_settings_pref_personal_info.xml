@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/shake_item_default_bgimg" android:key="shake_item_default_bgimg" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/shake_item_change_bgimg" android:key="shake_item_change_bgimg" android:widgetLayout="@layout/mm_preference_screen" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/shake_item_sound" android:key="shake_item_sound" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/say_hi_list_shake_title" android:key="say_hi_list_shake_title" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/shake_item_shake_person_list" android:key="shake_item_shake_person_list" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/shake_item_shake_music_list" android:key="shake_item_shake_music_list" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/shake_item_shake_webpage_list" android:key="shake_item_shake_webpage_list" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.base.preference.SwitchKeyValuePreference android:layout="@layout/mm_preference" android:title="@string/shake_item_shake_tran_img" android:key="shake_item_shake_tran_img" android:widgetLayout="@layout/mm_preference_screen" />
+    <com.tencent.mm.ui.base.preference.SwitchKeyValuePreference android:layout="@layout/mm_preference" android:title="@string/shake_item_shake_bookmark" android:key="shake_item_shake_bookmark" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

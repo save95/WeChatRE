@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.securityaccount.SecurityAccountHeaderPreference android:layout="@layout/security_account_header_pref" android:key="security_account_header" />
+    <Preference android:layout="@layout/mm_preference" android:key="security_account_operation" android:widgetLayout="@layout/mm_preference_submenu" />
+    <PreferenceCategory android:key="security_account_operation_cat" />
+</PreferenceScreen>

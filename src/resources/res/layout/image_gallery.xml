@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cropimage_fl" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.gallery.MMGestureGallery android:id="@id/gallery" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="0.0dip" android:unselectedAlpha="1.2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cropimage_operator_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/mm_title" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cropimage_function_bar" android:background="@drawable/personactivity_bigphoto_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/mm_title_btn_text" android:layout_gravity="center_vertical" android:id="@id/cropimage_function_btn" android:background="@drawable/mm_title_act_btn" android:paddingLeft="25.0dip" android:paddingTop="8.0dip" android:paddingRight="25.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/cropimage_view_hd_img" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

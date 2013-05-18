@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MMScroll">
+        <LinearLayout style="@style/MMBody">
+            <TextView android:gravity="left" android:id="@id/mod_safe_device_name_hint_tv" android:visibility="gone" android:layout_marginTop="5.0dip" android:text="@string/safe_device_mod_name_hint" style="@style/MMBriefText" />
+            <EditText android:id="@id/mod_safe_device_name" android:hint="@string/safe_device_new_name" style="@style/MMLineEditText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

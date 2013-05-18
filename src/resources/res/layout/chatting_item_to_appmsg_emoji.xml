@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" style="@style/ChattingUISplit" />
+    <LinearLayout style="@style/ChattingUIContent">
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/chatting_state_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/uploading_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <com.tencent.mm.ui.chatting.EmojiView android:layout_gravity="center" android:id="@id/chatting_content_iv" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/downloadIv" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/smiley_expressiondown" />
+        </LinearLayout>
+        <ImageView android:id="@id/chatting_avatar_iv" style="@style/ChattingUIAvatarTo" />
+    </LinearLayout>
+</LinearLayout>

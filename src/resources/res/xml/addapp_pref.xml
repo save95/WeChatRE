@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceCategory android:key="addapp_cat" />
+    <com.tencent.mm.ui.base.preference.PluginTextPreference android:layout="@layout/mm_preference_content_plugin_text" android:key="addapp_added_text" android:plugin_icon="@drawable/app_icon" android:plugin_text="@string/addapp_added_app" android:plugin_text_color="#ff454545" />
+    <com.tencent.mm.ui.openapi.AppPreference android:layout="@layout/app_preference" android:key="addapp_added" android:btn_visibility="gone" android:can_delete="true" android:empty_wording="@string/addapp_empty_app_list_added" />
+    <PreferenceCategory android:key="addapp_cat2" />
+    <com.tencent.mm.ui.base.preference.PluginTextPreference android:layout="@layout/mm_preference_content_plugin_text" android:key="addapp_available_text" android:plugin_icon="@drawable/app_no_icon" android:plugin_text="@string/addapp_available_app" android:plugin_text_color="#ff454545" />
+    <com.tencent.mm.ui.openapi.AppPreference android:layout="@layout/app_preference" android:key="addapp_available" android:btn_visibility="gone" android:empty_wording="@string/addapp_empty_app_list_available" />
+    <PreferenceCategory android:key="addapp_cat3" />
+    <Preference android:layout="@layout/normal_pref_btn" android:title="@string/addapp_view_more_recommend_app" android:key="addapp_recommend" />
+    <PreferenceCategory android:key="addapp_cat4" />
+</PreferenceScreen>

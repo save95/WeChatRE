@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mm_listitem_conv" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="77.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="77.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tag_name" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/sns_word_color" android:id="@id/sns_tag_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pic_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:id="@id/tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginBottom="6.0dip">
+                <TableRow android:id="@id/tag_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </TableLayout>
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:gravity="center_vertical" android:id="@id/arrow" android:background="@drawable/mail_attach_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_marginBottom="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:gravity="center_vertical" android:id="@id/arrow_out" android:background="@drawable/mail_attach_item_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" />
+</LinearLayout>

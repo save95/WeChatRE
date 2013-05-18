@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.base.SwitchButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/switch_button_bg" android:background="@drawable/voip_switchbg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/between" android:background="@drawable/voip_switchbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+    </RelativeLayout>
+</com.tencent.mm.ui.base.SwitchButton>

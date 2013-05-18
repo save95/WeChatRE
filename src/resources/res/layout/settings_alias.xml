@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MMScroll">
+        <LinearLayout style="@style/MMBody">
+            <LinearLayout android:orientation="vertical" android:id="@id/customize_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="top|left|center" android:text="@string/regbyqq_reg_username_suggest_tip" style="@style/MMLineLabel" />
+                <View style="@style/MMSplit" />
+                <EditText android:id="@id/regbyqqreg_account_et" android:hint="@string/modify_username_hint" style="@style/MMLineEditText" />
+                <View style="@style/MMSplit" />
+                <TextView android:gravity="top|left|center" android:text="@string/modify_username_detail" android:height="70.0dip" style="@style/MMLineLabel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

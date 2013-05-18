@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.LayoutListenerView android:orientation="vertical" android:id="@id/mm_base_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_top_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/mm_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:id="@id/mm_trans_layer" android:background="@color/semitransparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/mm_body_sv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.tencent.mm.ui.LayoutListenerView>

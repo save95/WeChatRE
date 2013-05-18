@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.backup.ui.BakchatBannerView android:gravity="center_vertical" android:id="@id/bakchat_banner_view" android:background="@drawable/net_tip_detail_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bakchat_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:src="@drawable/chatrecord_uploading" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/BasicTextSize" android:id="@id/bakchat_info" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/webwxOnlineTip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_webwechat_go" android:contentDescription="@string/app_name" />
+    </com.tencent.mm.plugin.backup.ui.BakchatBannerView>
+</LinearLayout>

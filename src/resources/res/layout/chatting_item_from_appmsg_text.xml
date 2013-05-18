@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" android:clickable="true" style="@style/ChattingUISplit" />
+    <RelativeLayout style="@style/ChattingAppUIContent">
+        <ImageView android:id="@id/chatting_avatar_iv" android:focusable="false" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/ChattingUIAvatarFrom" />
+        <TextView android:id="@id/chatting_user_tv" android:visibility="gone" android:layout_toRightOf="@id/chatting_avatar_iv" style="@style/ChattingUISenderText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatting_avatar_iv" android:layout_below="@id/chatting_user_tv">
+            <TextView android:id="@id/chatting_content_itv" android:background="@drawable/chatfrom_bg" android:minHeight="@dimen/ChattingContentMinHeight" style="@style/ChattingUIText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/chatting_appmsg_source_tv" android:background="@drawable/app_msg_item_source_from" android:layout_marginLeft="10.0dip" android:text="{source}" style="@style/ChattingItemSourceTextView" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:id="@id/chatting_appmsg_comment_tv" android:background="@drawable/app_msg_item_source_from" android:layout_marginRight="50.0dip" android:text="@string/chatting_comment" style="@style/ChattingItemSourceTextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

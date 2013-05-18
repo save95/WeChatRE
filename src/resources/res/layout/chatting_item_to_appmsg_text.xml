@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" style="@style/ChattingUISplit" />
+    <RelativeLayout android:orientation="vertical" style="@style/ChattingAppUIContent">
+        <ImageView android:id="@id/chatting_avatar_iv" android:focusable="false" android:visibility="gone" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/ChattingUIAvatarTo" />
+        <TextView android:id="@id/chatting_user_tv" android:visibility="gone" android:text="{user}" android:layout_toLeftOf="@id/chatting_avatar_iv" style="@style/ChattingUISenderText" />
+        <LinearLayout android:id="@id/chatting_content_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/chatting_avatar_iv">
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/chatting_state_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/uploading_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/chatting_content_itv" android:background="@drawable/chatto_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ChattingContentMinHeight" style="@style/ChattingUIText" />
+                    <TextView android:id="@id/chatting_appmsg_source_tv" android:background="@drawable/app_msg_item_source_to" android:layout_marginLeft="5.0dip" style="@style/ChattingItemSourceTextView" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

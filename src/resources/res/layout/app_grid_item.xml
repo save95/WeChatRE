@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="73.0dip" android:layout_height="90.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="73.0dip" android:layout_height="90.0dip">
+            <RelativeLayout android:layout_width="64.0dip" android:layout_height="64.0dip">
+                <ImageView android:id="@id/app_grid_item_icon" android:layout_width="53.299988dip" android:layout_height="53.299988dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/app_grid_item_icon_mask" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/app_panel_shade" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/app_grid_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="78.0dip" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" style="@style/app_grid_item_name_font" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|right|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/app_grid_item_new_icon" android:background="@drawable/tab_unread_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dip" android:text="@string/app_new" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

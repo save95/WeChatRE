@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>浙江高院重审吴英案改判死缓</title>
+		<script language="javascript" src="http://res.mail.qq.com/mmr/static/lib/js/jquery.js"></script>
+		<script language="javascript" src="http://res.mail.qq.com/mmr/static/lib/js/lazyloadv3.js"></script>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;" />
+		
+<style>
+
+
+	body { margin:0;padding:0;background:#eae9e6; }
+	body,p,table,td,th { font-size:14px;font-family:helvetica,Arial,Tahoma; }
+	h1 { font-family:Baskerville,HelveticaNeue-Bold,helvetica,Arial,Tahoma; }
+	a { text-decoration:none;color:#385487;}
+	
+	
+	.container {  }
+	.title { }
+	#content {padding:30px 20px 20px;color:#111;box-shadow:0 1px 4px #ccc; background:#f7f2ed;  }
+	.seeAlso { padding:15px 20px 30px; }
+
+	.headpic div { margin:20px 0 0;}
+	.headpic img { display:block;}
+
+	.title h1 { font-size:22px;font-weight:bold;padding:0;margin:0;line-height:1.2;color:#1f1f1f; }
+	.title p { color:#aaa;font-size:12px;margin:5px 0 0;padding:0;font-weight:bold;}
+	.pic { margin:20px 0; }
+	.articlecontent img { display:block;clear:both;box-shadow:0px 1px 3px #999; margin:5px auto;}
+	.articlecontent p { text-indent: 2em; font-family:Georgia,helvetica,Arial,Tahoma;line-height:1.4; font-size:16px; margin:20px 0;  }
+	
+	
+	.seeAlso h3 { font-size:16px;color:#a5a5a5;}
+	.seeAlso ul { margin:0;padding:0; }
+	.seeAlso li {  font-size:16px;list-style-type:none;border-top:1px solid #ccc;padding:2px 0;}
+	.seeAlso li a { border-bottom:none;display:block;line-height:1.1; padding:13px 0; }
+
+	.clr{ clear:both;height:1px;overflow:hidden;}
+
+	
+	.fontSize1 .title h1 { font-size:20px; }
+	.fontSize1 .articlecontent p {  font-size:14px; }
+	.fontSize1 .weibo .nickname,.fontSize1 .weibo .comment  { font-size:11px; }
+	.fontSize1 .moreOperator { font-size:14px; }
+
+
+	.fontSize2 .title h1 { font-size:22px; }
+	.fontSize2 .articlecontent p {  font-size:16px; }
+	.fontSize2 .weibo .nickname,.fontSize2 .weibo .comment  { font-size:13px; }
+	.fontSize2 .moreOperator { font-size:16px; }
+
+	.fontSize3 .title h1 { font-size:24px; }
+	.fontSize3 .articlecontent p {  font-size:18px; }
+	.fontSize3 .weibo .nickname,.fontSize3 .weibo .comment  { font-size:15px; }
+	.fontSize3 .moreOperator { font-size:18px; }
+
+	.fontSize4 .title h1 { font-size:26px; }
+	.fontSize4 .articlecontent p {  font-size:20px; }
+	.fontSize4 .weibo .nickname,.fontSize4 .weibo .comment  { font-size:16px; }
+	.fontSize4 .moreOperator { font-size:20px; }
+
+	.jumptoorg { display:block;margin:16px 0 16px; }
+	.jumptoorg a {  }
+
+	.moreOperator a { color:#385487; }
+
+	.moreOperator .share{ border-top:1px solid #ddd; }
+
+	.moreOperator .share a{ display:block;border:1px solid #ccc;border-radius:4px;margin:20px 0;border-bottom-style:solid;background:#f8f7f1;color:#000; }
+
+	.moreOperator .share a span{ display:block;padding:10px 10px;border-radius:4px;text-align:center;border-top:1px solid #eee;border-bottom:1px solid #eae9e3;font-weight:bold; }
+
+	.moreOperator .share a:hover,
+	.moreOperator .share a:active { background:#efedea; }
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {	
+	}
+</style>
+<script language="javascript">
+function auto_remove(img){
+	div=img.parentNode.parentNode;div.parentNode.removeChild(div);
+	img.onerror="";
+	return true;
+}
+
+function changefont(fontsize){
+	if(fontsize < 1 || fontsize > 4)return;
+	$('#content').removeClass().addClass('fontSize' + fontsize);
+}
+
+
+// setTimeout(function(){
+// 	WeixinJSBridge.finishLoading();
+// },2000);
+
+jQuery(document).ready(function(){
+	WeixinJSBridge.finishLoading();
+});
+
+// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+
+
+	// 设置字段大小的回调,目前有1-4个大小等级
+	WeixinJSBridge.on('menu:setfont',function(argv){
+		// 示例代码
+      var num = parseInt(argv.fontSize);
+      changefont(num);
+      return;
+
+  	});
+
+	// 发送app消息
+	jQuery('a#sendAppMessage').click(function(e){
+    	 WeixinJSBridge.invoke('sendAppMessage',{
+    	 	"appid" : "http://y.qq.com/i/song_iphone.html#p=7B22736F6E675F4E616D65223A22E4B88DE698AFE4BDA0E79A84E99499222C22736F6E675F5761704C69766555524C223A22687474703A2F2F74736D7573696334382E74632E71712E636F6D2F586B3030515635375970574347757A3872726C65627442334D5373583659576F3447417A51744B644D6F3136424271474734425664654973556C397A397151386953426A4269633D2F31313230333139342E6D34613F7569643D323333353530323939362663743D3026636869643D222C22736F6E675F5769666955524C223A22687474703A2F2F73747265616D31352E71716D757369632E71712E636F6D2F33313230333139342E6D7033222C226E657454797065223A2277696669222C22736F6E675F416C62756D223A22E5A5BDE99ABEE5BE97222C22736F6E675F4944223A313230333139342C22736F6E675F54797065223A312C22736F6E675F53696E676572223A22E4B881E5BD93222C22736F6E675F576170446F776E4C6F616455524C223A22687474703A2F2F74736D757369633132382E74632E71712E636F6D2F586C464E4D3136375247656D704368494B66562F73467578456546583037493135644C70416E745139754F63574A5666336241586C626948704B69444875692B574B386F324F50424D6C4B73496C386B57673D3D2F33313230333139342E6D70333F7569643D323333353530323939362663743D3026636869643D2673747265616D5F706F733D35227D",　// appID
+		    "img_url": "http://mmsns.qpic.cn/mmsns/RLllkTm3DUdV24xbZnKicx9jJWxXI0Bq84zzbtibGuRyk/0", // app消息的缩略图
+		    "img_width": "640",　// 图片宽度
+		    "img_height": "640", // 图片高度
+		    "link": "http://y.qq.com/i/song_iphone.html#p=7B22736F6E675F4E616D65223A22E4B88DE698AFE4BDA0E79A84E99499222C22736F6E675F5761704C69766555524C223A22687474703A2F2F74736D7573696334382E74632E71712E636F6D2F586B3030515635375970574347757A3872726C65627442334D5373583659576F3447417A51744B644D6F3136424271474734425664654973556C397A397151386953426A4269633D2F31313230333139342E6D34613F7569643D323333353530323939362663743D3026636869643D222C22736F6E675F5769666955524C223A22687474703A2F2F73747265616D31352E71716D757369632E71712E636F6D2F33313230333139342E6D7033222C226E657454797065223A2277696669222C22736F6E675F416C62756D223A22E5A5BDE99ABEE5BE97222C22736F6E675F4944223A313230333139342C22736F6E675F54797065223A312C22736F6E675F53696E676572223A22E4B881E5BD93222C22736F6E675F576170446F776E4C6F616455524C223A22687474703A2F2F74736D757369633132382E74632E71712E636F6D2F586C464E4D3136375247656D704368494B66562F73467578456546583037493135644C70416E745139754F63574A5666336241586C626948704B69444875692B574B386F324F50424D6C4B73496C386B57673D3D2F33313230333139342E6D70333F7569643D323333353530323939362663743D3026636869643D2673747265616D5F706F733D35227D",　// 连接地址
+		    "desc": "http://y.qq.com/i/song_iphone.html#p=7B22736F6E675F4E616D65223A22E4B88DE698AFE4BDA0E79A84E99499222C22736F6E675F5761704C69766555524C223A22687474703A2F2F74736D7573696334382E74632E71712E636F6D2F586B3030515635375970574347757A3872726C65627442334D5373583659576F3447417A51744B644D6F3136424271474734425664654973556C397A397151386953426A4269633D2F31313230333139342E6D34613F7569643D323333353530323939362663743D3026636869643D222C22736F6E675F5769666955524C223A22687474703A2F2F73747265616D31352E71716D757369632E71712E636F6D2F33313230333139342E6D7033222C226E657454797065223A2277696669222C22736F6E675F416C62756D223A22E5A5BDE99ABEE5BE97222C22736F6E675F4944223A313230333139342C22736F6E675F54797065223A312C22736F6E675F53696E676572223A22E4B881E5BD93222C22736F6E675F576170446F776E4C6F616455524C223A22687474703A2F2F74736D757369633132382E74632E71712E636F6D2F586C464E4D3136375247656D704368494B66562F73467578456546583037493135644C70416E745139754F63574A5666336241586C626948704B69444875692B574B386F324F50424D6C4B73496C386B57673D3D2F33313230333139342E6D70333F7569643D323333353530323939362663743D3026636869643D2673747265616D5F706F733D35227Dhttp://y.qq.com/i/song_iphone.html#p=7B22736F6E675F4E616D65223A22E4B88DE698AFE4BDA0E79A84E99499222C22736F6E675F5761704C69766555524C223A22687474703A2F2F74736D7573696334382E74632E71712E636F6D2F586B3030515635375970574347757A3872726C65627442334D5373583659576F3447417A51744B644D6F3136424271474734425664654973556C397A397151386953426A4269633D2F31313230333139342E6D34613F7569643D323333353530323939362663743D3026636869643D222C22736F6E675F5769666955524C223A22687474703A2F2F73747265616D31352E71716D757369632E71712E636F6D2F33313230333139342E6D7033222C226E657454797065223A2277696669222C22736F6E675F416C62756D223A22E5A5BDE99ABEE5BE97222C22736F6E675F4944223A313230333139342C22736F6E675F54797065223A312C22736F6E675F53696E676572223A22E4B881E5BD93222C22736F6E675F576170446F776E4C6F616455524C223A22687474703A2F2F74736D757369633132382E74632E71712E636F6D2F586C464E4D3136375247656D704368494B66562F73467578456546583037493135644C70416E745139754F63574A5666336241586C626948704B69444875692B574B386F324F50424D6C4B73496C386B57673D3D2F33313230333139342E6D70333F7569643D323333353530323939362663743D3026636869643D2673747265616D5F706F733D35227Dhttp://y.qq.com/i/song_iphone.html#p=7B22736F6E675F4E616D65223A22E4B88DE698AFE4BDA0E79A84E99499222C22736F6E675F5761704C69766555524C223A22687474703A2F2F74736D7573696334382E74632E71712E636F6D2F586B3030515635375970574347757A3872726C65627442334D5373583659576F3447417A51744B644D6F3136424271474734425664654973556C397A397151386953426A4269633D2F31313230333139342E6D34613F7569643D323333353530323939362663743D3026636869643D222C22736F6E675F5769666955524C223A22687474703A2F2F73747265616D31352E71716D757369632E71712E636F6D2F33313230333139342E6D7033222C226E657454797065223A2277696669222C22736F6E675F416C62756D223A22E5A5BDE99ABEE5BE97222C22736F6E675F4944223A313230333139342C22736F6E675F54797065223A312C22736F6E675F53696E676572223A22E4B881E5BD93222C22736F6E675F576170446F776E4C6F616455524C223A22687474703A2F2F74736D757369633132382E74632E71712E636F6D2F586C464E4D3136375247656D704368494B66562F73467578456546583037493135644C70416E745139754F63574A5666336241586C626948704B69444875692B574B386F324F50424D6C4B73496C386B57673D3D2F33313230333139342E6D70333F7569643D323333353530323939362663743D3026636869643D2673747265616D5F706F733D35227D这个是描述啊啊",　// 描述
+		    "title": "朝鲜称中国渔船越界捕捞"　// 标题
+		},function(res){
+			// 返回res.err_msg,取值
+			// send_app_msg:cancel 用户取消
+			// send_app_msg:fail　发送失败
+			// send_app_msg:ok 发送成功
+			WeixinJSBridge.log(res.err_msg);
+		});
+	});
+
+	// 查看用户profile
+	jQuery('a#viewProfile').click(function(e){
+		WeixinJSBridge.log('asdfsd');
+		WeixinJSBridge.invoke('profile',{'username':'jaketest1'});　// 需要是查看的联系人username
+	});
+
+	// 分享到微薄
+	jQuery('a#shareWeibo').click(function(e){
+	 	WeixinJSBridge.invoke('shareWeibo',{
+			"content" : "#微信分享# 星xx，周六有活动。详情　http://t.qq.com/Aasd",	// 分享到微薄的内容
+			"url" : "http://t.qq.com/Aasd" // 分享连接地址
+		},function(res){
+			switch(err.err_code){
+				case 'share_weibo:no_weibo':{
+
+				}
+				break;
+			}
+			// 返回res.err_msg,取值
+			// share_weibo:no_weibo 用户未开通微薄
+			// share_weibo:not_bind_qq　未绑定QQ
+			// share_weibo:ok 发送成功
+			// share_weibo:cancel 用户取消
+			// share_weibo:fail_<内部错误码> 发送失败
+			WeixinJSBridge.log(res.err_msg);
+		});
+	});
+
+	// 分享到朋友圈
+	jQuery('a#shareTimeline').click(function(e){
+	 	WeixinJSBridge.invoke('shareTimeline',{
+		    "img_url": "http://mmsns.qpic.cn/mmsns/RLllkTm3DUdV24xbZnKicx9jJWxXI0Bq84zzbtibGuRyk/0", // 分享到朋友圈的缩略图
+		    "img_width": "640",　// 图片的长度
+		    "img_height": "640", // 图片高度
+		    "link": "http://news.qq.com/zt2012/cxkyym/index.htm",　// 连接地址
+		    "desc": "这个是描述啊啊", // 描述
+		    "title": "朝鲜称中国渔船越界捕捞" // 分享标题
+		},function(res){
+			// 返回res.err_msg,取值
+			// share_timeline:cancel 用户取消
+			// share_timeline:fail　发送失败
+			// share_timeline:ok 发送成功
+			WeixinJSBridge.log(res.err_msg);
+		});
+	   		
+	});
+
+	// 添加联系人
+	jQuery('a#addContact').click(function(e){
+		WeixinJSBridge.invoke("addContact",{
+			webtype : "1", // 添加联系人的场景，1表示企业联系人。
+			username : 'newspedia',　// 需要添加的联系人username
+		},function(res){
+			// 返回res.err_msg,取值
+			// add_contact:added 已添加过
+			// add_contact:cancel 用户取消
+			// add_contact:fail　添加失败
+			// add_contact:ok 添加成功
+			WeixinJSBridge.log(res.err_msg);
+		});
+	    
+	});
+
+		// 添加联系人
+	jQuery('a#addContact2').click(function(e){
+		WeixinJSBridge.invoke('addContact',{
+			"webtype" : "1", // 添加联系人的场景，1表示企业联系人。
+			"username" : "newspedia",　// 需要添加的联系人username
+		},function(res){
+			// 返回res.err_msg,取值
+			// add_contact:added 已添加过
+			// add_contact:cancel 用户取消
+			// add_contact:fail　添加失败
+			// add_contact:ok 添加成功
+			WeixinJSBridge.log(res.err_msg);
+		});
+	    
+	});
+
+	// 调用微信内置的图片浏览
+    jQuery('img').click(function(e){
+	    WeixinJSBridge.invoke('addEmoticon',{
+	    	'url':e.target.src,
+	    	'appid':'aas'
+	    },function(e){
+	    	// 可能的返回值如下：
+	    	// add_emoticon:download_failed 下载失败
+	    	// add_emoticon:unsupported_type 不支持的类型（下载到非图片的数据）
+	    	// add_emoticon:cancel 调用了取消接口
+	    	// add_emoticon:unknown 其它未知原因
+	    	WeixinJSBridge.log(e.err_msg);
+	    });
+    });
+	
+	// 隐藏标题按钮
+   jQuery('a#hideOptionMenu').click(function(e){
+		WeixinJSBridge.log('123');
+		WeixinJSBridge.invoke('hideOptionMenu');
+	});
+	
+	// 显示标题按钮
+   jQuery('a#showOptionMenu').click(function(e){
+		WeixinJSBridge.log('123');
+		WeixinJSBridge.invoke('showOptionMenu');
+	});
+	
+	// 隐藏底部栏
+   jQuery('a#hideToolbar').click(function(e){
+		WeixinJSBridge.log('123');
+		WeixinJSBridge.invoke('hideToolbar');
+	});
+	
+	// 显示底部栏
+   jQuery('a#showToolbar').click(function(e){
+		WeixinJSBridge.log('123');
+		WeixinJSBridge.invoke('showToolbar');
+	});
+	
+	// 获取网络类型
+	jQuery('a#getNetworkType').click(function(e){		
+		WeixinJSBridge.invoke('getNetworkType',{},
+		function(e){
+	    	WeixinJSBridge.log(e.err_msg);
+	    });
+	});
+	
+	// 关闭窗口
+   jQuery('a#closeWindow').click(function(e){
+		WeixinJSBridge.invoke('closeWindow');
+	});
+	
+	// 获取安装状态
+   jQuery('a#getInstallState').click(function(e){
+		WeixinJSBridge.invoke('getInstallState',{
+	    	'packageName':'com.tencent.news'
+	    },function(e){
+	    	// 可能的返回值如下：(android platform)
+	    	// get_install_state:yes_[version]
+	    	// get_install_state:no
+	    	WeixinJSBridge.log(e.err_msg);
+	    });
+	});
+	
+	// 死循环分享到朋友圈
+	var funcTmp = function(e){
+	 	WeixinJSBridge.invoke('shareTimeline',{
+		    "img_url": "http://mmsns.qpic.cn/mmsns/RLllkTm3DUdV24xbZnKicx9jJWxXI0Bq84zzbtibGuRyk/0", // 分享到朋友圈的缩略图
+		    "img_width": "640",　// 图片的长度
+		    "img_height": "640", // 图片高度
+		    "link": "http://news.qq.com/zt2012/cxkyym/index.htm",　// 连接地址
+		    "desc": "这个是描述啊啊", // 描述
+		    "title": "朝鲜称中国渔船越界捕捞" // 分享标题
+		},function(res){
+			// 返回res.err_msg,取值
+			// share_timeline:cancel 用户取消
+			// share_timeline:fail　发送失败
+			// share_timeline:ok 发送成功
+			//WeixinJSBridge.log(res.err_msg);
+			
+			if (res.err_msg != "share_timeline:ok"){
+				jQuery('a#shareTimelineInfinite').click(funcTmp);
+			}
+		});
+	   		
+	}
+	jQuery('a#shareTimelineInfinite').click(funcTmp);
+	
+	// 跳转到扫描二维码页面
+    jQuery('a#scanQRCode').click(function(e){
+    	WeixinJSBridge.invoke('scanQRCode',function(res){
+    		WeixinJSBridge.log(res.err_msg);
+    	});
+    });
+
+    var allImgs = jQuery('img');
+    for (var i = 0; i < allImgs.length; i++) {
+    	var im = allImgs[i];
+    	WeixinJSBridge.invoke('hasEmoticon',{'url':im.src},function(e){
+    		switch(e.err_msg){
+    			case 'has_emoticon:yes':{　// 已经添加过了
+    				WeixinJSBridge.log('added '+im.src);
+    			}
+    			break;
+    			case 'has_emoticon:no':{　// 未添加
+    				WeixinJSBridge.log('not added '+im.src);
+    			}
+    			break;
+    		}
+    	});
+    };
+
+	WeixinJSBridge.log('yo~ ready.');
+
+}, false)
+
+if(jQuery){
+	jQuery(function(){
+
+		setTimeout(function(){
+			$('#add_inside').prepend('<img id="theImg" src="img.jpeg?delay=1000" style="display:none" />');
+		},2000);
+
+		var width = jQuery('body').width() * 0.87;
+		jQuery('img').error(function(){
+			var self = jQuery(this);
+			var org = self.attr('data-original1');
+			self.attr("src", org);
+			self.error(function(){
+				auto_remove(this);
+			});
+		});
+		jQuery('img').each(function(){
+			var self = jQuery(this);
+			var w = self.css('width');
+			var h = self.css('height');
+			w = w.replace('px', '');
+			h = h.replace('px', '');
+			if(w <= width){
+				return;
+			}
+			var new_w = width;
+			var new_h = Math.round(h * width / w);
+			self.css({'width' : new_w + 'px', 'height' : new_h + 'px'});
+			self.parents('div.pic').css({'width' : new_w + 'px', 'height' : new_h + 'px'});
+		});
+	});
+}
+</script>
+</head>
+<body>
+	<div class="container">
+
+
+
+		<div id="add_inside">
+		</div>
+
+		<img src="small.jpeg?delay=1000" />
+		<img src="small.jpeg?delay=1000" />
+		<img src="small.jpeg?delay=1000" />
+		<img src="img.jpeg?delay=1000" style="display:none"/>
+		<img src="http://imgsrc.baidu.com/forum/abpic/item/cbc1069afcc1be479c163d71.jpg" />
+                 
+		<div id="content" class="fontSize2">
+			<div class="title">
+				<h1>浙江高院重审吴英案改判死缓</h1>
+				<p>2012-05-21 新华网</p>
+			</div>
+		
+					<div class="moreOperator">
+				<div class="share" id="share">
+					<a id="111" href="weixin://profile/cndairyqueen"><span>分享到腾讯微博</span></a>
+					<a id="shareWeibo" href="javascript:void(0);"><span>分享到腾讯微博</span></a>
+					<a id="shareTimeline" href="javascript:void(0);"><span>分享到朋友圈</span></a>
+					<a id="viewProfile" href="javascript:void(0);"><span>查看profile</span></a>				
+					<a id="addContact" href="javascript:void(0);"><span>添加联系人</span></a>									
+					<a id="addContact2" href="javascript:void(0);"><span>添加联系人2</span></a>														
+					<a id="sendAppMessage" href="javascript:void(0);"><span>发送app消息</span></a>		
+					<a id="launchApp" href="sdksample://test"><span>打开第三方应用</span></a>							
+					<a id="getA8Key" href="http://10.9.37.84/~jakerong/reader_test1.html#wechat_redirect"><span>GetA8Key</span></a>											
+					<a id="hideOptionMenu" href="javascript:void(0);"><span>隐藏标题按钮</span></a>
+					<a id="showOptionMenu" href="javascript:void(0);"><span>显示标题按钮</span></a>
+					<a id="hideToolbar" href="javascript:void(0);"><span>隐藏底部栏</span></a>
+					<a id="showToolbar" href="javascript:void(0);"><span>显示底部栏</span></a>			
+
+					<a id="getNetworkType" href="javascript:void(0);"><span>获取网络类型</span></a>		
+					<a id="closeWindow" href="javascript:void(0);"><span>关闭窗口</span></a>
+
+					<a id="getInstallState" href="javascript:void(0);"><span>获取安装状态</span></a>	
+					
+					<a href="http://www.baidu.com#wechat_webview_type=0"><span>webview_type=0跳转</span></a>
+					<a href="http://www.baidu.com#wechat_webview_type=1"><span>webview_type=1跳转</span></a>
+					
+					<a href="weixin://jump/mainframe"><span>跳转主界面</span></a>
+					
+					<a id="shareTimelineInfinite" href="javascript:void(0);"><span>死循环分享到朋友圈</span></a>
+					
+					<a id="scanQRCode" href="javascript:void(0);"><span>跳转到扫描二维码页面</span></a>
+				</div>   
+			</div>
+			
+			<div class="articlecontent">
+				<!-- <div class="pic" style="width:480px;height:341px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/0/8f/ba/08fba08eb211a42cd4641024b7a67e24.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/ccb60f2a3f3dd53ad29fca2c4e7815dc/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F56123%2F640&maxwidth=640*800"><img style="width:480px;height:341px"  onerror="javascript:return auto_remove(this);" src="http://res.mail.qq.com/mmr/img/0/8f/ba/08fba08eb211a42cd4641024b7a67e24.jpg" data-original1="http://pic.weixin.qq.com/p/ccb60f2a3f3dd53ad29fca2c4e7815dc/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F56123%2F640&maxwidth=640*800"/></a></div><p>资料图：2012年1月18日，浙江高院对吴英案二审，驳回其上诉，维持死刑判决。</p><p>新华社杭州5月21日电（记者 裘立华）5月21日下午，浙江省高级人民法院经重新审理后，对被告人吴英集资诈骗案作出终审判决，以集资诈骗罪判处被告人吴英死刑，缓期二年执行，剥夺政治权利终身，并处没收其个人全部财产。</p><p>被告人吴英集资诈骗一案，浙江省金华市中级人民法院一审认定被告人吴英，于2003年至2005年在东阳市开办美容店、理发休闲屋期间，以合伙或投资等为名，向徐玉兰、俞亚素、唐雅琴、夏瑶琴、竺航飞、赵国夫等人高息集资，欠下巨额债务。为还债，吴英继续非法集资。2005年5月至2007年1月间，吴英以给付高额利息为诱饵，采取隐瞒先期资金来源真相、虚假宣传经营状况、虚构投资项目等手段，先后从林卫平、杨卫陵、杨卫江（均另案处理）等11人处非法集资人民币7.7亿余元，用于偿付集资款本息、购买房产、汽车及个人挥霍等，实际诈骗金额为3.8亿余元。一审判决以集资诈骗罪判处被告人吴英死刑，剥夺政治权利终身，并处没收其个人全部财产。被告人吴英不服，提出上诉。浙江省高级人民法院经公开开庭审理后，裁定驳回被告人吴英的上诉，维持原判，并报请最高人民法院复核。</p><p>最高人民法院经复核后认为，第一审判决、第二审裁定认定被告人吴英犯集资诈骗罪的事实清楚，证据确实、充分，定性准确，审判程序合法，综合全案考虑，对吴英判处死刑，可不立即执行，裁定发回浙江省高级人民法院重新审判。</p><p>浙江省高级人民法院经重新审理后认为，被告人吴英集资诈骗数额特别巨大，给受害人造成重大损失，且其行为严重破坏了国家金融管理秩序，危害特别严重，应依法惩处。鉴于吴英归案后如实供述所犯罪行，并主动供述了其贿赂多名公务人员的事实，其中已查证属实并追究刑事责任的3人，综合考虑，对吴英判处死刑，缓期二年执行。根据《中华人民共和国刑事诉讼法》第一百八十九条第（二）项和《最高人民法院关于复核死刑案件若干问题的规定》第九条、第十一条的规定，作出前述判决。</p> -->
+				<!-- <p>坠机现场</p><div class="pic" style="width:550px;height:367px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/c/2a/2a/c2a2aa6db14a28942c5103ac575da6cf.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/fbb3795e6c51c27be68ca27f132efea8/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125108%2F640&maxwidth=640*800" target="_blank"><img style="width:550px;height:367px" src="http://res.mail.qq.com/mmr/img/c/2a/2a/c2a2aa6db14a28942c5103ac575da6cf.jpg" data-original1="http://pic.weixin.qq.com/p/fbb3795e6c51c27be68ca27f132efea8/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125108%2F640&maxwidth=640*800"  /></a></div><p>这是6月3日在尼日利亚拉各斯拍摄的坠机现场。尼日利亚一架客机当天在拉各斯机场附近坠毁，机上153人全部遇难，并造成地面至少40人死亡。记者从有关方面获悉，客机上有中国乘客。新华社发（伊齐基尔·塔伊沃摄）</p><div class="pic" style="width:550px;height:367px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/7/84/31/78431e3994c5f4f1f1dc48e918cc1ce0.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/7ef0f46ae87aff9895981e7921d85144/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125971%2F640&maxwidth=640*800" target="_blank"><img style="width:550px;height:367px" src="http://res.mail.qq.com/mmr/img/7/84/31/78431e3994c5f4f1f1dc48e918cc1ce0.jpg" data-original1="http://pic.weixin.qq.com/p/7ef0f46ae87aff9895981e7921d85144/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125971%2F640&maxwidth=640*800"  /></a></div><p>这是6月3日在尼日利亚拉各斯拍摄的坠机现场。</p><div class="pic" style="width:550px;height:367px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/5/93/98/5939811b19f3880cbe2d644a793518d6.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/d255768da37a86e97f6f8b6c786d576a/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125972%2F640&maxwidth=640*800" target="_blank"><img style="width:550px;height:367px" src="http://res.mail.qq.com/mmr/img/5/93/98/5939811b19f3880cbe2d644a793518d6.jpg" data-original1="http://pic.weixin.qq.com/p/d255768da37a86e97f6f8b6c786d576a/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125972%2F640&maxwidth=640*800"  /></a></div><p>6月3日，人们聚集在尼日利亚拉各斯的坠机现场。</p><div class="pic" style="width:550px;height:367px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/f/e1/63/fe1634813507675786b0a1e6ab8b910b.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/878141c5e59e06a29f17ab1a7255bbd1/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125973%2F640&maxwidth=640*800" target="_blank"><img style="width:550px;height:367px" src="http://res.mail.qq.com/mmr/img/f/e1/63/fe1634813507675786b0a1e6ab8b910b.jpg" data-original1="http://pic.weixin.qq.com/p/878141c5e59e06a29f17ab1a7255bbd1/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125973%2F640&maxwidth=640*800"  /></a></div><p>6月3日，人们聚集在尼日利亚拉各斯的坠机现场。</p><div class="pic" style="width:550px;height:411px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/f/00/a5/f00a52d7869e1a06498a0883cce90f6a.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/6e85cbf474368ef1315ba1e44c9b3508/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125099%2F640&maxwidth=640*800" target="_blank"><img style="width:550px;height:411px" src="http://res.mail.qq.com/mmr/img/f/00/a5/f00a52d7869e1a06498a0883cce90f6a.jpg" data-original1="http://pic.weixin.qq.com/p/6e85cbf474368ef1315ba1e44c9b3508/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125099%2F640&maxwidth=640*800"  /></a></div><p>阿拉伯媒体援引地面上的目击者的话称，客机可能碰上输电线，然后撞向一栋建筑。</p><p>新华网拉各斯6月3日电（记者李怀林 牛小溪）记者从有关方面获悉，在3日坠毁的尼日利亚客机上至少有6名中国乘客，比原来报道的数字多了2人。</p><p>尼日利亚丹纳(DANA)航空公司一架客机3日下午在飞抵拉各斯机场附近时坠毁，连同机组人员机上153人全部遇难。</p><p>尼日利亚民用航空局局长哈罗德·德姆仁向新华社记者证实了这一消息。他说，这架载有超过153人的客机在接近拉各斯机场的一片居民区坠毁，并撞上了一座两层的建筑物，机上人员全部遇难，建筑物中至少有40人死亡。</p><p>德姆仁说，飞机坠毁后火势凶猛，尼日利亚国家紧急事务管理署以及当地武装警察和交通警察到现场开展救援工作。尼军方也已派出直升机参与现场救援工作。</p><p>该架客机3日下午从尼日利亚首都阿布贾起飞飞往尼南部城市拉各斯。事件发生前24小时，一家从拉各斯起飞的尼日利亚货机在飞往加纳途中坠毁，造成至少10人死亡。</p><p>现场：居民区腾起巨大的浓烟</p><p>阿拉伯媒体援引地面上的目击者的话称，客机可能碰上输电线，然后撞向一栋建筑。</p><p>拉各斯当天的天气状况良好，无云，晴朗。当地媒体的报道画面显示，一个居民区腾起巨大的浓烟，许多人正围着看起来似乎是飞机残骸的物体旁。（新京报 景青）</p><p>中国驻尼使馆核实坠机中国公民信息</p><p>人民网北京6月4日电(记者 杨铁虎) 当地时间6月3日下午，尼日利亚DANA航空公司一架从阿布贾飞往拉各斯的班机在拉各斯地区坠毁。经向有关方面初步核实，机上共有乘客153人，其中中国公民4人。有关详细情况中国驻尼日利亚大使馆正在进一步核实中。</p><p>中国驻尼日利亚大使馆官网(http://www.fmpr<wbr  />c.gov.cn/ce/cen<wbr  />g/chn/<wbr  />)4日凌晨公布了大使馆24小时值班电话以及拉各斯总领馆值班电话。</p><p>大使馆值班电话为：00234-806584268<wbr  />8<wbr  />；00234-818115849<wbr  />5<wbr  />；00234-803320955<wbr  />8<wbr  />。</p><p>拉各斯总领馆值班电话：00234-805666611<wbr  />6<wbr  />。</p><p>尼日利亚总统宣布为空难遇难者举行3天全国哀悼</p><p>中新网6月4日电 据外电报道，尼日利亚总统宣布为空难遇难者举行3天的全国哀悼。</p><p>当地时间3日下午，尼日利亚一架客机坠毁在拉各斯机场附近的居民区，机上153人恐全部遇难。</p><p>事故原因仍在调查之中。</p><div class="pic" style="width:354px;height:480px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/c/b8/31/cb831314ee0c41382c456f23ed10e659.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/194d41504c71d389aff09f8164f4f89f/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125100%2F640&maxwidth=640*800" target="_blank"><img style="width:354px;height:480px" src="http://res.mail.qq.com/mmr/img/c/b8/31/cb831314ee0c41382c456f23ed10e659.jpg" data-original1="http://pic.weixin.qq.com/p/194d41504c71d389aff09f8164f4f89f/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125100%2F640&maxwidth=640*800"  /></a></div><p>这是2012年6月3日在尼日利亚拉各斯拍摄的坠机现场。图片：新华社/法新</p><div class="pic" style="width:490px;height:480px"><a href="weixin://viewimage/http://res.mail.qq.com/mmr/img/9/d4/2a/9d42a18487eae66cc66f76321309febc.jpg" href2="weixin://viewimage2/http://pic.weixin.qq.com/p/64736df382ef6328d21e2f1ed788d2d7/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125065%2F640&maxwidth=640*800" target="_blank"><img style="width:490px;height:480px" src="http://res.mail.qq.com/mmr/img/9/d4/2a/9d42a18487eae66cc66f76321309febc.jpg" data-original1="http://pic.weixin.qq.com/p/64736df382ef6328d21e2f1ed788d2d7/?mlurl=http%3A%2F%2Fpnewsapp.tc.qq.com%2Fnewsapp_bt%2F0%2F125065%2F640&maxwidth=640*800"  /></a></div><p>居民区腾起巨大的浓烟。</p> -->
+			</div>
+		</div>
+		<div class="seeAlso">			
+			<h3>相关新闻</h3>
+			<ul>
+				<li><a href="http://news.qq.com/a/20120521/000957.htm" target="_blank">浙江高院回应吴英案重审为何未开庭审理</a></li>
+				<li><a href="http://news.qq.com/a/20120505/000363.htm" target="_blank">吴英父亲紧急进京上访 怀疑女儿被迫更换律师</a></li>
+				<li><a href="http://news.qq.com/a/20120420/001523.htm" target="_blank">最高法：吴英供述贿赂公务员 可不立即执行死刑</a></li>
+			</ul>	
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mmtitle_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.base.MMImageButton android:id="@id/title_btn4" android:background="@drawable/mm_title_btn_back" android:focusable="true" android:visibility="visible" style="@style/MMTitleButton" />
+            <TextView android:textSize="19.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/location_info" android:singleLine="true" android:shadowColor="#ff404040" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.base.MMImageButton android:id="@id/title_btn1" android:background="@drawable/mm_title_btn_right" android:focusable="true" android:visibility="visible" style="@style/MMTitleButton" />
+        </LinearLayout>
+        <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.maps.MapView android:id="@id/g_mapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="05iGkFSm2uMe-_6wzcT2vhVQUfSWfJK8sRGXRVQ" />
+            <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/control_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

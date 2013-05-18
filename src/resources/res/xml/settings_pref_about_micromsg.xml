@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_market_ratings" android:key="settings_market_ratings" android:widgetLayout="@layout/mm_preference_screen" />
+    <IconPreference android:title="@string/settings_welcome" android:key="funtion_about_wechat" />
+    <IconPreference android:title="@string/settings_update" android:key="settings_update" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_faq" android:key="settings_feedback" android:widgetLayout="@layout/mm_preference_screen" />
+    <IconSummaryPreference android:title="@string/funtion_update" android:key="funtion_update" />
+    <IconPreference android:title="@string/funtion_check_update" android:key="funtion_check_update" />
+</PreferenceScreen>

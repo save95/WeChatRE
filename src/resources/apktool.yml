@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: WeChat_4.5.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '7'
+packageInfo:
+  cur_package: android
+  orig_package: com.tencent.mm
+compressionType: false

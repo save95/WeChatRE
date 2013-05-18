@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MMScroll">
+        <LinearLayout style="@style/MMBody">
+            <TextView android:text="@string/regbyfacebook_reg_setpwd_tip" android:layout_weight="1.0" style="@style/MMLineLabel" />
+            <EditText android:id="@id/regbyfacebookreg_pass_et" android:hint="@string/regbyfacebook_reg_setpwd_fill_pwd" style="@style/MMLineEditPass" />
+            <View style="@style/MMSplit" />
+            <EditText android:id="@id/regbyfacebookreg_pass_again_et" android:hint="@string/regbyfacebook_reg_setpwd_fill_pwd_again" style="@style/MMLineEditPass" />
+            <View style="@style/MMSplit" />
+            <TextView android:text="@string/regbyfacebook_reg_setpwd_fill_tip" android:layout_weight="1.0" style="@style/MMLineLabel" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

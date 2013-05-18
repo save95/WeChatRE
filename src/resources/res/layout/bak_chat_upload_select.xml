@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/bak_chat_select_list" android:background="@color/white" android:focusable="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:dividerHeight="0.0px" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_horizontal" android:id="@id/bak_chat_search_empty" android:background="@color/white" android:paddingTop="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bak_chat_search_empty" android:layout_weight="1.0" style="@style/MMFontEmptyMsgLarge" />
+        </LinearLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.tencent.mm.ui.AlphabetScrollBar android:id="@id/address_scrollbar" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bak_chat_select_confirm_area" android:background="@drawable/mmfooter_bg_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/bak_chat_total_size" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/MMFontTitleInList" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/bak_chat_total_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0B" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/MMFontTitleInList" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/title_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="?android:attr/progressBarStyleSmall" />
+        <Button android:textColor="@color/mm_title_btn_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/bak_chat_select_confirm_btn" android:background="@drawable/mm_title_act_btn" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="@string/app_finish" />
+    </LinearLayout>
+</LinearLayout>

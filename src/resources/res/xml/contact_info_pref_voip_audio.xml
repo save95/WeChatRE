@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.HelperHeaderPreference android:layout="@layout/contact_info_header_helper" android:key="contact_info_header_helper" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="true" android:title="@string/voipaudio_notify_sound" android:key="contact_info_voipaudio_sound_notify" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/voipaudio_setting_sound_tip" android:key="contact_info_voipaudio_sound_tip" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/install_btn" android:title="@string/settings_plugins_install" android:key="contact_info_voipaudio_install" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/settings_plugins_uninstall" android:key="contact_info_voipaudio_uninstall" android:widgetLayout="@layout/mm_preference_screen" />
+</PreferenceScreen>

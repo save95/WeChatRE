@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.sns.ui.KeyboardLinearLayout android:orientation="vertical" android:id="@id/sns_timeline_root" android:background="#ff282b2d" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.ui.base.MMPullDownView android:id="@id/sns_pull_down_view" android:background="@color/sns_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-54.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/sns_photo_list" android:background="@color/sns_bg_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="@color/sns_bg_color" android:divider="@null" android:layout_weight="1.0" />
+        </com.tencent.mm.ui.base.MMPullDownView>
+        <com.tencent.mm.plugin.sns.ui.SnsCommentFooter android:id="@id/comment_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.plugin.sns.ui.KeyboardLinearLayout>
+    <AbsoluteLayout android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:id="@id/sns_refresh_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_refresh" android:scaleType="matrix" android:layout_y="-40.0dip" />
+    </AbsoluteLayout>
+</FrameLayout>

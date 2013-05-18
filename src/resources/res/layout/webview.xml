@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.sns.ui.KeyboardLinearLayout android:id="@id/webview_keyboard_ll" android:background="@null" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/web_navigator" android:background="@drawable/webviewtab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/web_back" android:background="@drawable/webview_tab_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/web_forward" android:background="@drawable/webview_tab_forward_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/web_back" />
+        <Button android:id="@id/web_refresh" android:background="@drawable/webview_tab_refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.sns.ui.KeyboardLinearLayout>

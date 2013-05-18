@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/touch_view" android:background="#ff1d1e1d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@drawable/talk_room_title_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <Button android:id="@id/info_btn" android:background="@drawable/talk_room_exit_btn" android:visibility="invisible" android:layout_width="39.0dip" android:layout_height="39.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffbfbfbf" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff222222" style="@style/with_dark_shadow_top" />
+        </LinearLayout>
+        <Button android:id="@id/up_btn" android:background="@drawable/talk_room_up_btn" android:layout_width="39.0dip" android:layout_height="39.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="114.0dip">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/talk_room_avatars_frame_bg" android:paddingLeft="3.0dip" android:paddingTop="6.0dip" android:paddingRight="3.0dip" android:paddingBottom="6.0dip" android:layout_width="290.0dip" android:layout_height="103.0dip" android:layout_marginTop="5.0dip">
+            <com.tencent.mm.plugin.talkroom.ui.TalkRoomAvatarsFrame android:layout_gravity="center_horizontal" android:id="@id/avatar_frame" android:layout_width="290.0dip" android:layout_height="58.0dip" android:layout_marginTop="6.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <ImageView android:id="@id/ic_person" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/talk_room_persons_ic" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:textSize="13.0sp" android:id="@id/count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/ic_person" android:layout_centerVertical="true" style="@style/with_dark_shadow_top" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/talk_room_tv_green" android:id="@id/mic_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talk_room_readying" android:singleLine="true" android:shadowColor="#ff222222" android:layout_centerInParent="true" style="@style/with_dark_shadow_top" />
+                <Chronometer android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff79ffc5" android:id="@id/chronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/talk_room_avatars_frame_frame" android:layout_width="320.0dip" android:layout_height="114.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="58.0dip">
+        <com.tencent.mm.plugin.talkroom.ui.TalkRoomVolumeMeter android:layout_gravity="center" android:id="@id/volume_meter" android:layout_width="320.0dip" android:layout_height="58.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="245.0dip" android:layout_height="252.0dip">
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/led_iv" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/talk_room_led_black" android:scaleType="fitXY" android:contentDescription="@null" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/mic_btn" android:background="@null" android:layout_width="245.0dip" android:layout_height="252.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+</LinearLayout>

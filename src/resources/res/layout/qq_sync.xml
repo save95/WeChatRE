@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:padding="0.0dip" android:layout_height="fill_parent" style="@style/MMBody">
+        <TextView android:id="@id/qq_sync_update_data" android:layout_marginLeft="15.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="30.0dip" style="@style/qq_sync_last_state_text" />
+        <LinearLayout android:id="@id/qq_sync_upload" android:layout_marginBottom="2.0dip" style="@style/qq_sync_btn">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contacts_backup" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="@string/qq_sync_upload" style="@style/qq_sync_btn_act_text" />
+                <TextView android:text="@string/qq_sync_upload_hint" style="@style/qq_sync_btn_intro_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/qq_sync_download" style="@style/qq_sync_btn">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contacts_restoration" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="@string/qq_sync_download" style="@style/qq_sync_btn_act_text" />
+                <TextView android:text="@string/qq_sync_download_hint" android:lineSpacingExtra="@dimen/qq_sync_intro_text_spacing" style="@style/qq_sync_btn_intro_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/qq_sync_intro" android:text="@string/qq_sync_intro" style="@style/qq_sync_op_text" />
+                <TextView android:id="@id/qq_sync_statement" android:layout_marginLeft="15.0dip" android:text="@string/qq_sync_pwd_safe_tip" style="@style/qq_sync_op_text" />
+            </LinearLayout>
+            <TextView android:id="@id/qq_sync_desc" android:layout_marginTop="12.0dip" android:text="@string/qq_sync_bottom" style="@style/qq_sync_intro_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

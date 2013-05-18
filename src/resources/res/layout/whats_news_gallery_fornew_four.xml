@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_bg_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whatsnew_fornew_04" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/whats_new_title_fornew_6" />
+    <TextView android:gravity="center" android:id="@id/intro" android:paddingBottom="350.0dip" android:text="@string/whats_new_title_fornew_4" android:layout_alignParentBottom="true" style="@style/whats_new_title" />
+</RelativeLayout>

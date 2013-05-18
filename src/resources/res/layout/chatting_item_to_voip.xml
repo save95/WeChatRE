@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" style="@style/ChattingUISplit" />
+    <LinearLayout android:gravity="right" android:layout_gravity="right" style="@style/ChattingUIContent">
+        <LinearLayout android:orientation="vertical" android:id="@id/chatting_click_area" android:background="@drawable/chatto_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/chatting_user_tv" android:visibility="gone" style="@style/ChattingUISenderText" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/app_panel_video_icon" style="@style/ChattingUIThumbnail" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/chatting_voip_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_call_msg" />
+        </LinearLayout>
+        <ImageView android:id="@id/chatting_avatar_iv" android:focusable="false" android:layout_marginTop="5.0dip" style="@style/ChattingUIAvatarFrom" />
+    </LinearLayout>
+</LinearLayout>

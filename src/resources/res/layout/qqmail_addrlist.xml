@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffaaaaaa" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffced2d7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/qqmail_addrlist_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" />
+        <TextView android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/nofind_tip_tv" android:background="@color/white" android:paddingTop="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/plugin_qqmail_composeui_addr_list_search_empty" android:layout_weight="1.0" style="@style/MMFontEmptyMsgLarge" />
+    </LinearLayout>
+    <TextView android:textColor="@color/black" android:id="@id/empty_tip_tv" android:background="#ffced2d7" android:visibility="gone" android:text="@string/plugin_qqmail_composeui_addr_list_empty" style="@style/MMFontEmptyMsgLarge" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout style="@style/MMBody">
+            <TextView android:text="@string/bind_mcontact_voice_verify_hint" style="@style/MMLineLabel" />
+            <View style="@style/MMLabelSplit" />
+            <TextView android:text="@string/bind_mcontact_voice_verify_hint2" style="@style/MMLineLabel" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_current_language" android:background="@drawable/preference_single_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="-5.0dip" android:minHeight="@dimen/PreferenceItemHeight">
+                <TextView android:id="@id/languagename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/bind_mcontact_voice_verify_defaultLanguage" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+                <ImageView android:layout_gravity="right|center" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/mm_submenu" />
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/bind_mcontact_voice_verify_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/bind_mcontact_voice_verify_start" style="@style/MMLineActionButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

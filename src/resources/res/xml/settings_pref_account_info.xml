@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_uin" android:key="settings_uin" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_mobile" android:key="settings_mobile" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_email_addr" android:key="settings_email_addr" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_about_domainmail" android:key="settings_about_domainmail" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/hardcode_plugin_facebookapp_nick" android:key="settings_facebook" android:widgetLayout="@layout/mm_preference_screen" />
+    <com.tencent.mm.ui.base.preference.PluginTextPreference android:key="settings_about_vusertitle" />
+    <com.tencent.mm.ui.setting.SelfVuserPreference android:key="settings_about_vuserinfo" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_verify_user_title_what" android:key="settings_about_vuser_about" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/settings_independent_password" android:key="settings_independent_password" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.securityaccount.SafeDeviceSwitchKeyValuePreference android:layout="@layout/mm_preference" android:title="@string/safe_device_account_protect" android:key="settings_safe_device" android:widgetLayout="@layout/mm_preference_submenu" />
+    <PreferenceCategory />
+</PreferenceScreen>

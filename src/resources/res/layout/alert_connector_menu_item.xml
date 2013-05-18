@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="92.0dip" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <ImageView android:id="@id/connector_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+        <View android:background="@drawable/mm_connector_selector" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/white" android:ellipsize="none" android:gravity="center" android:id="@id/connector_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+</LinearLayout>

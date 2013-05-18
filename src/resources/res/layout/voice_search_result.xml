@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/voice_search_resultlist" android:background="@color/white" android:focusable="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" />
+    <TextView android:textSize="17.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/empty_voicesearch_tip_tv" android:background="@color/white" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/address_empty_voicesearch_tip" />
+</FrameLayout>

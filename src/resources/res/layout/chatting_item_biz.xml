@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" android:visibility="visible" style="@style/ChattingUISplit" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chatting_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/topSlot" android:background="@drawable/reader_news_one_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="19.0sp" android:textColor="@color/black" android:id="@id/title" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffb2b2b2" android:id="@id/time" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <RelativeLayout android:id="@id/cover_container" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="135.0dip">
+                <ImageView android:id="@id/cover" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="135.0dip" android:scaleType="centerCrop" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/title_ll_in_image" android:background="@color/half_alpha_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/title_textview_in_image" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" />
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@id/item_loading_pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/largeCustomProgressBar" />
+                <TextView android:gravity="center_vertical" android:id="@id/download_fail_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_fail" android:drawableLeft="@drawable/msg_state_fail_resend" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/darkgrey" android:id="@id/digest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/app_name" />
+            <TextView android:textColor="@color/darkgrey" android:id="@id/detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/chatting_item_biz_view_detail" android:drawableRight="@drawable/mm_submenu" />
+        </LinearLayout>
+        <com.tencent.mm.ui.chatting.ChattingItemFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:id="@id/chatting_appmsg_comment_tv" android:background="@drawable/app_msg_item_source_from" android:layout_marginRight="15.0dip" android:text="@string/chatting_comment" style="@style/ChattingItemSourceTextView" />
+    </LinearLayout>
+</LinearLayout>

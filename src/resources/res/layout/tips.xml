@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="top|left|center" android:id="@id/topLeftTips" android:text="hellsdf" style="@style/tipsStyle" />
+    <TextView android:layout_gravity="top|right|center" android:id="@id/topRightTips" android:layout_marginRight="-20.0dip" style="@style/tipsStyle" />
+    <TextView android:layout_gravity="bottom|left|center" android:id="@id/bottomLeftTips" style="@style/tipsStyle" />
+    <TextView android:layout_gravity="bottom|right|center" android:id="@id/bottomRightTips" style="@style/tipsStyle" />
+</FrameLayout>

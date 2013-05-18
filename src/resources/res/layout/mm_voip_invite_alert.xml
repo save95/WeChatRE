@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/semitransparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_content_view" android:background="@drawable/confirm_dialog_top_bg" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">"
+<ImageView android:id="@id/mm_alert_title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_attention_icon" />
+                <TextView android:textSize="@dimen/TitleTextSize" android:textColor="@color/black" android:id="@id/mm_alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/voip_protect_disturb" android:shadowColor="@color/white" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_msg_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/LargeTextSize" android:textColor="@color/voip_invite_message_color" android:gravity="left" android:id="@id/mm_alert_msg_title" android:paddingLeft="7.0dip" android:paddingTop="13.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_send_request_title" android:shadowColor="@color/white" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@id/mm_alert_custom_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_bottom_view" android:background="@drawable/confirm_dialog_bottom_bg" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/mm_alert_ok_btn" android:background="@drawable/btn_style_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/voip_send_invite_remind_msg" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/voip_invite_message_color" android:gravity="center" android:id="@id/mm_alert_msg_content" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_invite_remind_tip" android:shadowColor="@color/white" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/mm_alert_cancel_btn" android:background="@drawable/btn_style_zero" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="14.0dip" android:text="@string/app_cancel" android:shadowColor="@color/black" android:shadowDx="1.2" android:shadowDy="1.2" android:shadowRadius="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

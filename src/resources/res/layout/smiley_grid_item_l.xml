@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/smiley_grid_item_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_centerInParent="true">
+        <FrameLayout android:gravity="center" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/art_emoji_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="top|left|center" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/art_emoji_del_tv" android:background="@drawable/roominfo_del_btn" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textColor="@color/darkgrey" android:id="@id/art_emoji_icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|right|center" android:layout_width="73.0dip" android:layout_height="70.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/art_emoji_new_tv" android:background="@drawable/tab_unread_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dip" android:text="@string/app_new" />
+    </LinearLayout>
+</RelativeLayout>

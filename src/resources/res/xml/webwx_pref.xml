@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/webwxlogout" />
+    <com.tencent.mm.ui.base.preference.MMSwitchButtonPreference android:layout="@layout/mm_preference_webwx_notify" android:persistent="false" android:title="@string/webwx_notification" android:key="webwx_notification" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/webwx_logout_btn_txt" android:key="webwx_logout" />
+    <PreferenceCategory />
+</PreferenceScreen>

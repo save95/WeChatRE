@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.HelperHeaderPreference android:layout="@layout/contact_info_header_helper" android:key="contact_info_header_helper" />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/hardcode_plugin_readerappnews_nick" android:key="contact_info_readerappnews_view" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/contact_info_readerappnews_recv_remind" android:key="contact_info_readerappnews_recv_remind" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_clear_data" android:key="contact_info_readerappnews_clear_data" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/install_btn" android:title="@string/settings_plugins_install" android:key="contact_info_readerappnews_install" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/settings_plugins_uninstall" android:key="contact_info_readerappnews_uninstall" android:widgetLayout="@layout/mm_preference_screen" />
+</PreferenceScreen>

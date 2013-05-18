@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chatting_time_tv" style="@style/ChattingUISplit" />
+    <RelativeLayout style="@style/ChattingUIContent">
+        <ImageView android:id="@id/chatting_avatar_iv" android:layout_alignParentRight="true" style="@style/ChattingUIAvatarTo" />
+        <TextView android:id="@id/chatting_user_tv" android:visibility="gone" android:layout_toLeftOf="@id/chatting_avatar_iv" android:layout_alignTop="@id/chatting_avatar_iv" style="@style/ChattingUISenderText" />
+        <TextView android:id="@id/chatting_voice_forwardflag" android:layout_toLeftOf="@id/chatting_avatar_iv" android:layout_below="@id/chatting_user_tv" android:layout_alignRight="@id/chatting_user_tv" style="@style/ChattingUIForwardFlagText" />
+        <TextView android:id="@id/chatting_voice_sending_bg" android:background="@drawable/chatto_bg_voice" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatting_avatar_iv" android:layout_below="@id/chatting_voice_forwardflag" android:layout_alignRight="@id/chatting_user_tv" />
+        <ProgressBar android:id="@id/chatting_voice_sending" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatting_voice_sending_bg" android:layout_alignBaseline="@id/chatting_voice_sending_bg" style="?android:attr/progressBarStyleSmallInverse" />
+        <FrameLayout android:gravity="right" android:layout_gravity="right" android:id="@id/chatting_voice_play_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatting_avatar_iv" android:layout_below="@id/chatting_voice_sending_bg" android:layout_alignRight="@id/chatting_user_tv">
+            <TextView android:id="@id/chatting_voice_play_anim_tv" android:background="@drawable/chatto_bg_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ChattingContentMinHeight" android:drawableRight="@drawable/chatto_voice_playing" />
+            <com.tencent.mm.ui.AnimImageView android:id="@id/chatting_voice_anim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ChattingContentMinHeight" />
+        </FrameLayout>
+        <TextView android:id="@id/chatting_content_itv" android:layout_toLeftOf="@id/chatting_voice_play_content" android:layout_alignTop="@id/chatting_voice_play_content" android:layout_alignBottom="@id/chatting_voice_play_content" style="@style/ChattingUIVoiceLength" />
+        <ImageView android:id="@id/chatting_state_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatting_content_itv" android:layout_alignTop="@id/chatting_voice_play_content" />
+    </RelativeLayout>
+</LinearLayout>

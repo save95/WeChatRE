@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/show_title_area" android:paddingTop="18.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/brand_setting_icon" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff646464" android:id="@id/show_title_area_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_favour_brand_show" android:shadowColor="@*android:color/white" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/my_favorite_biz_container" android:background="@drawable/openapi_app_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/unshow_title_area" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/brand_unsetting_icon" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff646464" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_favour_brand_not_show" android:shadowColor="@*android:color/white" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/my_favorite_biz_notshow_container" android:background="@drawable/openapi_app_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

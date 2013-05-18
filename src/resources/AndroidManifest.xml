@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="253" android:versionName="4.5" android:installLocation="auto" package="com.tencent.mm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.tencent.mm.oauth.permission.SEND" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.plugin.permission.WRITE" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.plugin.permission.READ" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.plugin.permission.SEND" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.permission.MM_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.tencent.mm.oauth.permission.SEND" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.READ" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.WRITE" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.SEND" />
+    <uses-permission android:name="com.tencent.mm.permission.MM_MESSAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.mm.location.permission.SEND_VIEW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application android:theme="@style/MMTheme.Basic" android:label="@string/app_name" android:icon="@drawable/icon" android:name=".app.MMApplication" android:largeHeap="true">
+        <uses-library android:name="com.google.android.maps" android:required="false" />
+        <uses-library name="com.sec.android.app.multiwindow" required="false" />
+        <activity android:theme="@style/MMTheme.Launcher" android:label="@string/launcher_name" android:name=".ui.LauncherUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.WelcomeUI" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name=".ui.DataTransferUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.login.LoginSelectorUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.login.LoginHistoryUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.login.LoginUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.login.AddAccountLoginUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.login.FacebookLoginUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.login.LoginInputPwdUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByQQAuthUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileRegUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileVerifyUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileVoiceVerifyUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileVoiceVerifySelectUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileSetPwdUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.RegByMobileSetNickUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.login.SimpleLoginUI" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.login.RegByFacebookSetPwdUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.chatting.ChattingUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.chatting.ImageDownloadUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.chatting.AtSomeoneUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.chatting.HelperAddressUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.chatting.AppAttachDownloadUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.chatting.AppMsgEmojiDownloadUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.chatting.CustomSmileyPreviewUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.transmit.SelectConversationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.MainTabUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.MainUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.AddressUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.friend.FMessageConversationUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.GroupCardSelectUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.ContactSearchUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.qrcode.GetFriendQRCodeUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.qrcode.QRCodeIntroductionWebViewUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/Theme.Transparent" android:name=".ui.qrcode.GetQRCodeInfoUI" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="weixin.qq.com" android:pathPrefix="/r/" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="weixin" android:host="qr" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.qrcode.SelfQRCodeUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.RoomInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.GrantRoomUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomRightUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomInfoShareQrUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomInfoDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.SendContactCardUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FindMoreFriendsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.AddMoreFriendsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.TConversationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.QConversationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name=".ui.transmit.MsgRetransmitUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name=".ui.transmit.SendAppMessageWrapperUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.player.MusicDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.contact.ContactInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.contact.VcardContactUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.contact.ModRemarkNameUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.contact.ContactQZoneWebView" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.contact.ContactSearchResultUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.MobileFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.QQFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.QQGroupUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.InviteFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.InviteRecommendChoiceUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.RecommendFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.InviteFacebookFriendsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.friend.ContactsSyncUI" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.plugin.sns.timeline" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.profile" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".plugin.shake.ui.ShakeSayHiListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.shakemusic.ui.MusicPlayerUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakeReportUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakePhotoViewerUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakeTranImgGalleryUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakePersonalInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakeTranImgIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.shake.ui.ShakeItemListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.SayHiEditUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.qrcode.ShareMicroMsgChoiceUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.qrcode.ShowQRCodeStep1UI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.electroniccard.ui.CardCodeImgUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.electroniccard.ui.CardInfoProxyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.electroniccard.ui.CardInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.electroniccard.ui.CardListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.ShowMyFavoriteBizUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsLanguageUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAboutMicroMsgUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAboutPrivacyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAboutTimelineUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsPrivacyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsPersonalInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsTWeiboUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAccountInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAliasUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsPluginsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsNotificationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SetTextSizeUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsAboutSystemUI" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.DISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.setting.SettingsRingtoneUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsModifyNameUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.setting.SettingsModifyEmailAddrUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsModifyPasswordUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsActiveTimeUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsNetStatUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.EditSignatureUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.qrcode.ShareToQQUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsPluginsNotifyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SendFeedBackUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.setting.SettingsFAQWebUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsChattingBackgroundUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.setting.SettingsSelectBgUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.facebook.FacebookAuthUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.facebook.FacebookFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.facebook.ShowNonWeixinFriendUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindmobile.BindMContactIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindmobile.BindMContactUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.bindmobile.BindMContactVerifyUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".ui.bindmobile.BindMContactStatusUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindqq.BindQQUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindqq.VerifyQQUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".ui.BindFacebookUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindqq.StartUnbindQQ" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.bindqq.SuccUnbindQQ" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMNewTaskTheme.Transparent" android:name=".ui.tools.NewTaskUI" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.tencent.mm.ui.tools.WhatsNewUI" android:process=":tools" />
+        <activity android:name=".ui.tools.MultiStageCitySelectUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.CountryCodeUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.CropImageNewUI" android:process=":tools" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.WebViewUI" android:screenOrientation="sensor" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.jsapi.ShareToQQWeiboUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.ImageGalleryUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.video.VideoPlayerUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.video.VideoRecorderUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.video.VideoDownloadUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.video.VideoRecorderPreviewUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.MMPluginProxyActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.bottle.ui.BottleWizardStep1" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.bottle.ui.BottleWizardStep2" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.bottle.ui.BottleBeachUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.bottle.ui.BottleConversationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.bottle.ui.BottleChattingUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".plugin.bottle.ui.BottlePersonalInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseReportUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.ComposeUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.MailAddrListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.FileExplorerUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.ReadMailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.MailAddrProfileUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.MailWebViewUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.CompressPreviewUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqmail.ui.AttachDownloadPage" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.masssend.ui.MassSendSelectContactUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.masssend.ui.MassSendMsgUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".plugin.masssend.ui.MassSendHistoryUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.readerapp.ui.ReaderAppUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.readerapp.ui.ReaderAppIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.gallery.GestureGalleryUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.readerapp.ui.ReaderAppSubscribeUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.location.ui.RedirectUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.location.ui.SosoMapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.location.ui.GGmapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsAnimation$SnsPostAnimationUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsUserUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsTimeLineUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".plugin.sns.ui.SnsCommentDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsStrangerCommentDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsUploadUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".plugin.sns.ui.SnsGalleryUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.ArtistBrowseUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Transparent" android:name=".plugin.sns.ui.SnsBrowseUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMSnsTheme.Transparent" android:name=".plugin.sns.ui.SnsSelectContactDialog" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsMsgUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SettingSnsBackgroundUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.ArtistUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsUploadBrowseUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsCommentUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".plugin.sns.ui.SnsAddressUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsTagUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsTagDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsBlackDetailUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsTagPartlyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsTagContactListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.sns.ui.SnsPermissionUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.tools.ShareImgUI" android:configChanges="keyboardHidden|orientation">
+            <intent-filter android:label="@string/app_share_to_weixin">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_share_to_weixin">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".plugin.backup.ui.BakChatUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakChatRecoverCheckUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakChatUploadSelectUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakChatUploadingUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakChatRecoveringUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakchatSetCryptUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakchatSelcetCryptUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.backup.ui.BakChatInputCryptUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".plugin.voip.ui.VideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MM_VOIP_Video_PAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".ui.base.MMSuperAlert" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".plugin.voip.ui.InviteRemindDialog" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".plugin.voip.audio.ui.VoipAudioUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MM_VOIP_Audio_PAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.securityaccount.SecurityAccountIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.securityaccount.SecurityAccountVerifyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.securityaccount.MySafeDeviceListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.securityaccount.ModSafeDeviceNameUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.securityaccount.BindSafeDeviceUI" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name=".booter.NotifyReceiver" android:exported="false" />
+        <receiver android:name=".sandbox.monitor.CrashUploadAlarmReceiver" android:exported="false" />
+        <receiver android:name=".booter.MountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".booter.NotifyReceiver$NotifyService" />
+        <service android:name=".modelfriend.AddrBookObserver$AddrBookService" />
+        <receiver android:name=".platformtools.SensorController">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".booter.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.media.SCO_AUDIO_STATE_CHANGED" />
+                <action android:name="android.media.ACTION_SCO_AUDIO_STATE_UPDATED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".booter.CoreService" android:process=":push" />
+        <service android:name=".booter.cache.CacheService" android:process=":push" />
+        <receiver android:name=".booter.MMReceivers$BootReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".booter.MMReceivers$ConnectionReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".booter.MMReceivers$AlarmReceiver" android:process=":push" />
+        <receiver android:name=".modelstat.WatchDogPushReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="com.tencent.mm.WatchDogPushReceiver" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".sandbox.monitor.ExceptionMonitorService" android:process=":sandbox" />
+        <activity android:theme="@style/Theme.Transparent" android:name=".sandbox.updater.AppUpdaterUI" android:process=":sandbox" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name=".sandbox.updater.UpdateReceiver" android:exported="true" />
+        <provider android:name=".plugin.base.stub.MMPluginProvider" android:writePermission="com.tencent.mm.plugin.permission.WRITE" android:authorities="com.tencent.mm.sdk.plugin.provider" />
+        <provider android:name=".plugin.base.stub.RContactDBProvider" android:readPermission="com.tencent.mm.plugin.permission.READ" android:writePermission="com.tencent.mm.plugin.permission.WRITE" android:authorities="com.tencent.mm.sdk.contact.provider" />
+        <provider android:name=".plugin.base.stub.RConversationDBProvider" android:readPermission="com.tencent.mm.plugin.permission.READ" android:writePermission="com.tencent.mm.plugin.permission.WRITE" android:authorities="com.tencent.mm.sdk.conversation.provider" />
+        <provider android:name=".plugin.base.stub.RMsgInfoDBProvider" android:readPermission="com.tencent.mm.plugin.permission.READ" android:writePermission="com.tencent.mm.plugin.permission.WRITE" android:authorities="com.tencent.mm.sdk.msginfo.provider" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name=".plugin.base.stub.PluginProxyUI" android:exported="true" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Transparent" android:name=".plugin.base.stub.PluginOAuthUI" android:exported="true" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme.Transparent" android:name=".plugin.base.stub.WXEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <receiver android:name=".plugin.base.stub.WXEntryActivity$EntryReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_REGISTER" />
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_UNREGISTER" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/MMTheme.Launcher" android:name=".plugin.base.stub.UIEntryStub" android:launchMode="singleTop" />
+        <activity android:name=".plugin.base.stub.OAuthUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.openapi.AddAppUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.openapi.AppProfileUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.WebWXLogoutUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.qrcode.WebWeiXinIntroductionUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.voicesearch.VoiceSearchResultUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.voicesearch.SearchConversationResultUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".plugin.voicereminder.ui.RemindDialog" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Talkroom" android:name=".plugin.talkroom.ui.TalkRoomUI" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name=".plugin.talkroom.model.TalkRoomReceiver" />
+        <activity android:name=".plugin.nearby.ui.NearbyFriendsIntroUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.nearby.ui.NearbyFriendShowSayHiUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.nearby.ui.NearbyFriendsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.nearby.ui.NearbyPersonalInfoUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.nearby.ui.NearbySayHiListUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".plugin.qqsync.ui.QQSyncUI" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name=".compatible.audio.MMRemoteController$Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".plugin.whatsnew.WhatsNewUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.WHATSNEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

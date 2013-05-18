@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_bg_man_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whatsnew_08_01" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/whats_new_title_fornew_6" />
+    <ImageView android:id="@id/image_bg_man_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whatsnew_08_02" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/whats_new_title_fornew_6" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/whats_new_title_tv" android:paddingBottom="350.0dip" android:text="@string/whats_new_title_fornew_6" android:layout_alignParentBottom="true" style="@style/whats_new_title" />
+        <Button android:textSize="@dimen/Big_TextSize" android:textColor="#ffffffff" android:id="@id/whats_new_start_btn" android:background="@drawable/whats_new_start_btn" android:duplicateParentState="false" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="140.0dip" android:text="@string/whats_new_start_fornew" android:shadowColor="@color/black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_alignTop="@id/whats_new_title_tv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.BizInfoHeaderPreference android:layout="@layout/contact_info_header_bizinfo" android:key="contact_info_header_bizinfo" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_isnot_verify_user_title" android:key="contact_info_user_desc" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_verify_user_title" android:key="contact_info_verifyuser" />
+    <Preference android:layout="@layout/mm_preference_info" android:title="@string/contact_info_time_expired" android:key="contact_info_time_expired" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_weibo" android:key="contact_info_verifyuser_weibo" android:widgetLayout="@layout/mm_preference_submenu" />
+    <PreferenceCategory />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/contact_info_subscribe_bizinfo" android:key="contact_info_subscribe_bizinfo" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/contact_info_show_brand" android:key="contact_info_show_brand" />
+    <CheckBoxPreference android:layout="@layout/mm_preference" android:persistent="false" android:title="@string/contact_info_locate" android:key="contact_info_locate" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/mm_preference" android:title="@string/contact_info_biz_view" android:key="contact_info_biz_view" android:widgetLayout="@layout/mm_preference_submenu" />
+    <PreferenceCategory />
+    <Preference android:layout="@layout/install_btn" android:title="@string/contact_info_biz_add" android:key="contact_info_biz_add" android:widgetLayout="@layout/mm_preference_screen" />
+    <Preference android:layout="@layout/logout_btn" android:title="@string/contact_info_biz_remove" android:key="contact_info_biz_remove" android:widgetLayout="@layout/mm_preference_screen" />
+    <PreferenceCategory />
+</PreferenceScreen>

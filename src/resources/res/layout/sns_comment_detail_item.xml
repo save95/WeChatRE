@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/sns_comment_detail_item_bg" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/sns_comment_left_icon" android:paddingLeft="8.0dip" android:paddingTop="13.0dip" android:paddingRight="8.0dip" android:visibility="invisible" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/friendactivity_writeicon" android:scaleType="center" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/sns_comment_line" android:background="@drawable/sns_comment_detail_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <com.tencent.mm.ui.tools.MaskImageButton android:id="@id/album_comment_avatar_iv" style="@style/SnsCommentAvatarFrom" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/album_comment_nick_tv" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="todo\ntodo" />
+                    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:layout_gravity="center_vertical" android:id="@id/album_comment_time_tv" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:10" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/sns_comment_color" android:layout_gravity="center_vertical" android:id="@id/album_comment_content_tv" android:background="@drawable/sns_clickable_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="todo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

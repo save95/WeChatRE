@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.bottle.ui.PickBottleUI android:background="@drawable/bottle_pick_bg_spotlight_day" style="@style/bottleFloatFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.bottle.ui.PickedBottleImageView android:layout_gravity="bottom|center" android:id="@id/bottle_picked_result_img" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="@*android:color/white" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" />
+        <ImageView android:background="@drawable/bottle_brand_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="top|left|center" android:id="@id/bottle_pick_open_hint_rl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bottle_open_hint_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottle_writing_arrow" />
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/bottle_open_hint" android:layout_toRightOf="@id/bottle_open_hint_arrow_iv" android:layout_below="@id/bottle_open_hint_arrow_iv" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.bottle.ui.PickBottleUI>

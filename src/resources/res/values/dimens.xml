@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="XLargeTextSize">20.0dip</dimen>
+    <dimen name="LargerTextSize">17.0dip</dimen>
+    <dimen name="LargeTextSize">16.0dip</dimen>
+    <dimen name="BasicTextSize">15.0dip</dimen>
+    <dimen name="TitleTextSize">18.0dip</dimen>
+    <dimen name="SmallTextSize">14.0dip</dimen>
+    <dimen name="SmallerTextSize">13.0dip</dimen>
+    <dimen name="SmallestTextSize">12.0dip</dimen>
+    <dimen name="LargestTextSize">30.0dip</dimen>
+    <dimen name="ChattingTextSize">16.0dip</dimen>
+    <dimen name="ChattingContentMinHeight">49.0dip</dimen>
+    <dimen name="PreferenceItemHeight">42.0dip</dimen>
+    <dimen name="ConversationItemHeight">54.0dip</dimen>
+    <dimen name="LargeAvatarSize">52.0dip</dimen>
+    <dimen name="MMTwinButtonMinSize">50.0dip</dimen>
+    <dimen name="qq_sync_intro_text_top_margin">2.0dip</dimen>
+    <dimen name="qq_sync_intro_text_spacing">0.0dip</dimen>
+    <dimen name="Large_TextSize">30.0dip</dimen>
+    <dimen name="Big_TextSize">23.0dip</dimen>
+    <dimen name="Medium_TextSize">20.0dip</dimen>
+    <dimen name="Small_TextSize">15.0dip</dimen>
+    <dimen name="Tiny_TextSize">10.0dip</dimen>
+    <dimen name="bak_chat_intro_text_spacing">0.0dip</dimen>
+    <dimen name="mmfooter_menu_button_width">91.66998dip</dimen>
+    <dimen name="talk_room_status_bar_height">24.0dip</dimen>
+</resources>

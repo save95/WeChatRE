@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_horizontal" style="@style/MMBody">
+            <ImageView android:id="@id/setting_bind_qq_state_icon" android:paddingBottom="33.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unbundqqtips_icon" />
+            <TextView android:id="@id/setting_bind_qq_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/unbind_qq_risk" android:lineSpacingExtra="4.0dip" style="@style/MMBriefText" />
+            <LinearLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:gravity="center" android:id="@id/setting_start_unbind_qq" android:background="@drawable/btn_style_zero" android:text="@string/unbind_qq_start" style="@style/MMLineActionButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

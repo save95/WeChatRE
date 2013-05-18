@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.NormalUserHeaderPreference android:layout="@layout/contact_info_header_normal" android:key="contact_info_header_normal" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_district" android:key="contact_info_district" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_signature" android:key="contact_info_signature" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_weibo" android:key="contact_info_weibo" android:widgetLayout="@layout/mm_preference_submenu" />
+    <com.tencent.mm.ui.contact.FriendPreference android:layout="@layout/mm_preference" android:key="contact_info_friend_qq" />
+    <com.tencent.mm.ui.contact.FriendPreference android:layout="@layout/mm_preference" android:key="contact_info_friend_mobile" />
+    <com.tencent.mm.ui.contact.FriendPreference android:layout="@layout/mm_preference" android:title="@string/hardcode_plugin_facebookapp_nick" android:key="contact_info_facebook" />
+    <com.tencent.mm.plugin.sns.ui.SnsPreference android:layout="@layout/mm_preference" android:title="@string/contact_info_sns_title" android:key="contact_info_sns" />
+    <com.tencent.mm.ui.contact.FavorBrandPreference android:layout="@layout/mm_preference" android:title="@string/contact_info_favor_brand" android:key="contact_info_favor_brand" android:widgetLayout="@layout/mm_preference_submenu" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_verify_user_title" android:key="contact_info_verifyuser" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:layout="@layout/mm_preference" android:title="@string/contact_info_source_title" android:key="contact_info_source" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.contact.NormalUserFooterPreference android:layout="@layout/contact_info_footer_normal" android:key="contact_info_footer_normal" />
+    <PreferenceCategory />
+</PreferenceScreen>

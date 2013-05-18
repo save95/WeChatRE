@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qq_sync_intro_text_top_margin">0.0dip</dimen>
+    <dimen name="qq_sync_intro_text_spacing">-4.0dip</dimen>
+</resources>
